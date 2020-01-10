@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9 ]>
+<html class="ie9"><![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>支持作者</title>
+
+    <!-- Material Design Icons -->
+    <link href="../vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css"
+          rel="stylesheet">
+    <link href="css/site.reward.css" rel="stylesheet"><!-- Site CSS -->
+
+    <link type="image/x-icon" href="../resource/img/favicon.ico" rel=icon/>
+    <link type="image/x-icon" href="../resource/img/favicon.ico" rel="shortcut icon"/>
+
+    <link href="../resource/css/essay.material.floating.button.css" rel="stylesheet"><!-- Material Floating Button -->
+    <style>
+        .section {
+            width: 100%;
+        }
+
+        .support {
+            padding: 1px 8px;
+            cursor: pointer;
+            background-color: #101E2A31;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -o-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .img-alipay {
+            border-radius: 9px;
+            margin-top: -370px;
+            margin-left: -105px;
+            position: absolute;
+        }
+
+        .title {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center
+        }
+
+        .barrage {
+            width: 100%;
+            background: #2B3942;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .barrage div {
+            position: absolute;
+        }
+
+    </style>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e3a97a0eee3cb03b5caf792f58032743";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+
+
+<section id="main" style="margin:auto;padding:0;width: 910px;">
+    <section style="margin-top: 10px">
+        <div class="card">
+            <div class="card__body" style="padding-top: 1px">
+                <h3 class="title">鸣谢</h3><br>
+                <div class="table-responsive">
+                    <li>数据来源：<a href="http://ciasi.org.cn/">中国保险汽车安全指数（中保研）</a></li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="position:relative;">
+
+        <div class="card">
+
+            <div id="card_body3" class="card__body" style="padding-top: 1px;text-align: center">
+                <h3 class="title">支持作者</h3><br>
+                <div class="barrage">
+                    <div><span class="support">哔哔哔哔哔哔</span></div>
+                    <div><span class="support">骁</span></div>
+                    <div><span class="support">王博文</span></div>
+                    <div><span class="support">小任</span></div>
+                    <div><span class="support">zhlive</span></div>
+                    <div><span class="support">小興興</span></div>
+                    <div><span class="support">思成</span></div>
+                    <div><span class="support">思明</span></div>
+                    <div><span class="support">锦峰</span></div>
+                    <div><span class="support">江林</span></div>
+                    <div><span class="support">YIFang0926</span></div>
+                    <div><span class="support">方益民</span></div>
+                </div>
+                <img class="img-alipay" src="../resource/img/pay/Alipay.png">
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="../resource/css/toolbox.reset.css"><!-- CSS reset -->
+    <link rel="stylesheet" href="../resource/css/toolbox.style.css"><!-- Resource style -->
+    <footer id="footer" class="font-yahei"></footer>
+</section>
+
+<script src="../vendors/bower_components/jquery/dist/jquery.min.js"></script><!-- jQuery -->
+<script async src="../resource/js/busuanzi.pure.mini.js"></script><!-- busuanzi PV&UV -->
+
+<!-- Nest Follow Mouse Background -->
+<script type="text/javascript" color="255,255,255" opacity='1.0' zIndex="-1" count="50"
+        src="../resource/js/canvas-nest.min.js"></script>
+
+<script>
+    var directoryDepth = 1;
+</script>
+<script src="../resource/js/zms.page.pattern.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $(".barrage").barrage()
+    });
+    (function () {
+        var barrage = function (ele, options) {
+            var defaults = {
+                color: [
+                    "#FF9999", "#F44336", "#E91E63", "#9D77FF",
+                    "#2196F3", "#35D2F4", "#00BCD4", "#009688",
+                    "#4CAF50", "#CDDC39", "#FFEB3B", "#FFC107",
+                ],
+                wrap: ele
+            };
+            this.settings = $.extend({}, defaults, options || {});
+            this._init();
+            this.bindEven();
+        };
+        barrage.prototype = {
+            _init: function () {
+                var item = $(this.settings.wrap).find("div");
+                for (var i = 0; i < item.length; i++) {
+                    item.eq(i).css({
+                        top: this.getRandomTop() + "px",
+                        color: this.getRandomColor(),
+                        fontSize: this.getRandomSize() + "px"
+                    });
+                    item.eq(i).css({
+                        right: -item.eq(i).width()
+                    })
+                }
+                this.randomTime(0);
+            },
+            bindEven: function () {
+                var _this = this;
+                $(".addbarrage .submit").on('click', function () {
+                    _this._click(_this);
+                });
+            },
+            getRandomColor: function () {
+                var max = this.settings.color.length;
+                var randomNum = Math.floor(Math.random() * max);
+                return this.settings.color[randomNum];
+            },
+            getRandomTop: function () {
+                var top = (Math.random() * 350).toFixed(1);
+                return top;
+            },
+            getRandomSize: function () {
+                var size = (15 + Math.random() * 10); // (12 + Math.random() * 28);
+                return size;
+            },
+            getRandomTime: function () {
+                var time = Math.floor((8 + Math.random() * 10));
+                return time * 1000;
+            },
+            randomTime: function (n) {
+                var obj = $(this.settings.wrap).find("div");
+                var _this = this;
+                var len = obj.length;
+                if (n >= len) n = 0;
+
+                setTimeout(function () {
+                    n++;
+                    _this.randomTime(n)
+                }, 1000);
+                var item = obj.eq(n), _w = item.outerWidth(!0);
+                item.animate({
+                    left: -_w
+                }, _this.getRandomTime(), "linear", function () {
+                    item.css({right: -_w, left: ""});
+                    _this.randomTime(n)
+                });
+            },
+            _click: function (obj) {
+                var _this = obj;
+                var _val = $(".barVal");
+                if (_val.val() == "") {
+                    return false;
+                }
+                $(_this.settings.wrap).append("<div><span class='new'>" + _val.val() + "</span></div>");
+                _this._init();
+                _val.val("");
+            }
+        };
+        $.fn.barrage = function (opt) {
+            var bger = new barrage(this, opt);
+        }
+    })(jQuery);
+</script>
+
+</body>
+</html>

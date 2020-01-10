@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="cn">
+<!--[if IE 9 ]>
+<html class="ie9"><![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="中保研碰撞测试汇总">
+    <meta name="keywords" content="中保研,碰撞测试,中保研汇总,中保研测试汇总,中保研碰撞测试汇总">
+    <title>中保研测试汇总</title>
+    <!-- Animate CSS -->
+    <!--<link href="../vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">-->
+    <!-- Material Design Icons -->
+    <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css"
+          rel="stylesheet">
+    <!-- Malihu Scrollbar -->
+    <!--<link href="../vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css"
+          rel="stylesheet">-->
+    <!-- Light Gallery -->
+    <link href="vendors/bower_components/lightgallery/dist/css/lightgallery.min.css" rel="stylesheet">
+    <!-- Bootgrid -->
+    <link href="vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid.min.css" rel="stylesheet">
+    <link href="resource/css/az.css" rel="stylesheet">
+
+    <link type="image/x-icon" href="resource/img/favicon.ico" rel=icon/>
+    <link type="image/x-icon" href="resource/img/favicon.ico" rel="shortcut icon"/>
+
+    <link href="resource/css/essay.material.floating.button.css" rel="stylesheet">
+    <link href="css/site.car.css" rel="stylesheet">
+    <style>
+        .car-logo {
+            width: 24px; /* 30px;3 */
+            height: 16px; /* 20px;2 */
+            margin-right: 15px; /* 18px */
+        }
+
+        .grade {
+            font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif, FreeSans, Arimo;
+            font-weight: bold;
+            color: #000000;
+            padding: 5px 0px;
+            text-align: center;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+            width: 55px;
+            height: 28px;
+            display: block
+        }
+
+        .not-official {
+            text-decoration: underline;
+        }
+
+        .btn-save-image {
+            font-size: small;
+            padding: 4px 5px;
+            margin-left: 26%;
+            cursor: pointer;
+            color: #ffffff;
+            background-color: #607D8B;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .btn-save-image:hover {
+            color: #FFEB3B;
+            background-color: #009688;
+        }
+
+        .update-date {
+            float: right;
+            font-weight: bold
+        }
+
+        .btn-detail-link {
+            font-size: large;
+            color: #AAAAAA;
+        }
+
+        .btn-detail-link:hover {
+            font-size: large;
+            color: #EEEEEE;
+        }
+
+        .btn-view-image {
+            background: none;
+            border: none;
+        }
+
+        .btn-detail-nolink {
+            font-size: x-large;
+            color: #9E9E9E;
+        }
+
+        .section {
+            width: 100%;
+        }
+
+        .score-detail {
+            width: 100%;
+            height: 795px;
+        }
+
+        .car-make {
+            color: #ffffff;
+        }
+
+        .car-model {
+            color: #ffffff;
+        }
+
+        .car-year {
+            font-size: x-small;
+        }
+
+        .watermark {
+            width: 100%;
+            margin-top: -15px;
+            margin-bottom: -20px;
+        }
+
+        .watermark .text {
+            font-size: small;
+            font-style: italic;
+            position: relative;
+            padding: 0 1.5rem;
+            color: #CCC;
+        }
+
+        .watermark .line-left {
+            display: inline-block;
+            vertical-align: middle;
+            width: 10%;
+            height: 1px;
+            background: linear-gradient(to left, #f44336, #FFEB3B, #4CAF50);
+        }
+
+        .watermark .line-right {
+            display: inline-block;
+            vertical-align: middle;
+            width: 10%;
+            height: 1px;
+            background: linear-gradient(to right, #f44336, #FFEB3B, #4CAF50);
+        }
+
+        .main-frame {
+            padding: 0px 5px 30px 5px;
+        }
+
+        .detail-frame {
+            padding: 5px 5px;
+        }
+    </style>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e3a97a0eee3cb03b5caf792f58032743";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body>
+<section id="main" style="margin:auto;padding:0;width: 910px;">
+    <section id="content">
+        <ul id="menu" class="mfb-component--br mfb-slidein-spring" data-mfb-toggle="hover"></ul>
+        <div class="card" style="margin-top: 10px">
+            <div class="action-header">
+                <span class="essay-title" style="font-size: larger;font-weight: bold;">中保研碰撞测试汇总</span>
+                <span id="btnSaveImage" class="btn-save-image"><i class="zmdi zmdi-download"></i> 保存图片</span>
+                <span align="right" class="update-date"><i class="zmdi zmdi-time"></i> 2020.01.08</span>
+            </div>
+            <div id="card_body" class="card__body main-frame">
+                <div class="table-responsive">
+                    <table id="list-car" class="table table-striped table--vmiddle"
+                           style="font-family: 'Microsoft YaHei', sans-serif">
+                        <thead>
+                        <tr>
+                            <th data-column-id="make" data-formatter="make"> 品牌</th>
+                            <th data-column-id="model" data-formatter="model" data-sortable="false">型号</th>
+                            <th data-column-id="year" data-formatter="year" data-sortable="false">款式</th>
+                            <th data-column-id="front" data-formatter="front">主驾25%</th>
+                            <th data-column-id="front_r" data-formatter="front_r" data-visible="false">副驾25%</th>
+                            <th data-column-id="side" data-formatter="side">侧面碰撞</th>
+                            <th data-column-id="top" data-formatter="top">车顶强度</th>
+                            <th data-column-id="seat" data-formatter="seat">座椅头枕</th>
+                            <th data-column-id="assist" data-formatter="assist">辅助安全</th>
+                            <th data-column-id="XR" data-formatter="XR">行人保护</th>
+                            <th data-column-id="fix" data-formatter="fix">耐撞维修</th>
+                            <th data-visible="false">测试批次</th>
+                            <th data-column-id="link" data-formatter="link" data-sortable="false">图片</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>一汽丰田</td><!-- Make -->
+                            <td>奕泽</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 31.5 -->
+                            <td>5.75</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>B</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>26</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽丰田</td><!-- Make -->
+                            <td>雷凌</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 17.5 -->
+                            <td>5.66</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>43</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>豪情沃尔沃</td><!-- Make -->
+                            <td>XC60</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 26.0 -->
+                            <td>5.06</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>40</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽荣威</td><!-- Make -->
+                            <td>RX5 MAX</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 20.5 -->
+                            <td>5.41</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>51</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>华晨宝马</td><!-- Make -->
+                            <td>325Li</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 17.5 -->
+                            <td>6.11</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>48</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>一汽丰田</td><!-- Make -->
+                            <td>亚洲龙</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 16.5 -->
+                            <td>6.03</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>44</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风日产</td><!-- Make -->
+                            <td>天籁</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>00</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>06</td><!-- 10.5 -->
+                            <td>4.73</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>39</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽丰田</td><!-- Make -->
+                            <td>凯美瑞</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 15.5 -->
+                            <td>5.98</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>15</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>豪情领克</td><!-- Make -->
+                            <td>01</td><!-- Model -->
+                            <td>2017</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 16.0 -->
+                            <td>5.21</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>16</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>比亚迪</td><!-- Make -->
+                            <td>唐</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>08</td><!-- 21.5 -->
+                            <td>4.04</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>41</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>长安福特</td><!-- Make -->
+                            <td>福克斯</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>05</td><!-- 1 -->
+                            <td>T</td><!-- FR -->
+                            <td>04</td><!-- 21.0 -->
+                            <td>5.61</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>B</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>42</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽凯迪拉克</td><!-- Make -->
+                            <td>XT4</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>06</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 18.5 -->
+                            <td>4.59</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>33</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽菲克吉普</td><!-- Make -->
+                            <td>大指挥官</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>08</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 16.0 -->
+                            <td>4.52</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>50</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>长城魏派</td><!-- Make -->
+                            <td>VV5</td><!-- Model -->
+                            <td>2017</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>10</td><!-- 18.0 -->
+                            <td>3.60</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>18</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>北京奔驰</td><!-- Make -->
+                            <td>C200</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>06</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>10</td><!-- 20.0 -->
+                            <td>6.06</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>20</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽本田</td><!-- Make -->
+                            <td>雅阁</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>06</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>14</td><!-- 14.5 -->
+                            <td>4.15</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>8</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽雪佛兰</td><!-- Make -->
+                            <td>科鲁泽</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>04</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>14</td><!-- 11.5 -->
+                            <td>4.36</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>46</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>众泰</td><!-- Make -->
+                            <td>T600</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>08</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- 14.0 -->
+                            <td>3.79</td><!-- Top -->
+                            <td>B</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>27</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风雷诺</td><!-- Make -->
+                            <td>科雷傲</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>08</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>06</td><!-- 4.5 -->
+                            <td>2.70</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>D</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>7</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽传祺</td><!-- Make -->
+                            <td>GS7</td><!-- Model -->
+                            <td>2017</td><!-- Year -->
+                            <td>09</td><!-- 1 -->
+                            <td>T</td><!-- FR -->
+                            <td>08</td><!-- 14.5 -->
+                            <td>3.75</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>C</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>23</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽三菱</td><!-- Make -->
+                            <td>欧蓝德</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>04</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>12</td><!-- 9.0 -->
+                            <td>2.89</td><!-- Top -->
+                            <td>B</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>34</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>长城哈弗</td><!-- Make -->
+                            <td>F5</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>04</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>32</td><!-- 17.5 -->
+                            <td>4.51</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>37</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>吉利</td><!-- Make -->
+                            <td>星越</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>12</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>06</td><!-- 17.0 -->
+                            <td>5.10</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>B</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>45</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>华晨宝马</td><!-- Make -->
+                            <td>318i</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>14</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>02</td><!-- 18.5 -->
+                            <td>4.89</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>4</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风日产</td><!-- Make -->
+                            <td>西玛</td><!-- Model -->
+                            <td>2016</td><!-- Year -->
+                            <td>16</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>02</td><!-- 5.5 -->
+                            <td>3.57</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>B</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>31</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽别克</td><!-- Make -->
+                            <td>昂科威</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>12</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>10</td><!-- 13.0 -->
+                            <td>4.36</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>9</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>一汽大众</td><!-- Make -->
+                            <td>迈腾</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>12</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>10</td><!-- 12.0 -->
+                            <td>5.12</td><!-- Top -->
+                            <td>B</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>A*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>14</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>广汽本田</td><!-- Make -->
+                            <td>凌派</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>12</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>24</td><!-- 12.5 -->
+                            <td>4.49</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>32</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>北京现代</td><!-- Make -->
+                            <td>菲斯塔</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>18</td><!-- 2 -->
+                            <td>T</td><!-- FR -->
+                            <td>28</td><!-- 10.5 -->
+                            <td>4.17</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>36</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>北京现代</td><!-- Make -->
+                            <td>领动</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>44</td><!-- 11.0 -->
+                            <td>5.32</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>22</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽斯柯达</td><!-- Make -->
+                            <td>柯迪亚克</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>09</td><!-- 1 -->
+                            <td>T</td><!-- FR -->
+                            <td>34</td><!-- 11.5 -->
+                            <td>4.55</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>A</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>25</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风本田</td><!-- Make -->
+                            <td>思域</td><!-- Model -->
+                            <td>2016</td><!-- Year -->
+                            <td>09</td><!-- 1 -->
+                            <td>T</td><!-- FR -->
+                            <td>84</td><!-- 8.0 -->
+                            <td>5.34</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>19</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>江淮</td><!-- Make -->
+                            <td>瑞风S3</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>16</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>56</td><!-- 4.5 -->
+                            <td>3.90</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>28</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>北京汽车</td><!-- Make -->
+                            <td>绅宝D50</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>17</td><!-- 1 -->
+                            <td>T</td><!-- FR -->
+                            <td>38</td><!-- 6.0 -->
+                            <td>3.31</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>38</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>奇瑞</td><!-- Make -->
+                            <td>艾瑞泽5</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>18</td><!-- 2 -->
+                            <td>T</td><!-- FR -->
+                            <td>58</td><!-- 10.5 -->
+                            <td>4.53</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>21</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风汽车</td><!-- Make -->
+                            <td>风神AX7</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>23</td><!-- 7 -->
+                            <td>T</td><!-- FR -->
+                            <td>08</td><!-- 15.0 -->
+                            <td>3.42</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>C</td><!-- Assist -->
+                            <td>D</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19A</td><!-- PC -->
+                            <td>35</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽大众</td><!-- Make -->
+                            <td>途观L</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>24</td><!-- 14 -->
+                            <td>T</td><!-- FR -->
+                            <td>08</td><!-- 18.0 -->
+                            <td>4.44</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>B*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>12</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风悦达起亚</td><!-- Make -->
+                            <td>智跑</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>24</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>10</td><!-- 13.0 -->
+                            <td>3.70</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>24</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>一汽奔腾</td><!-- Make -->
+                            <td>T77</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>24</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>30</td><!-- 23.5 -->
+                            <td>5.74</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>47</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽别克</td><!-- Make -->
+                            <td>GL8</td><!-- Model -->
+                            <td>2017</td><!-- Year -->
+                            <td>24</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>26</td><!-- 8.0 -->
+                            <td>3.51</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>29</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽大众</td><!-- Make -->
+                            <td>帕萨特</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>44</td><!-- 24 -->
+                            <td>T</td><!-- FR -->
+                            <td>22</td><!-- 13.0 -->
+                            <td>5.41</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>B</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td>49</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽五菱宝骏</td><!-- Make -->
+                            <td>510</td><!-- Model -->
+                            <td>2017</td><!-- Year -->
+                            <td>22</td><!-- 6 -->
+                            <td>T</td><!-- FR -->
+                            <td>80</td><!-- 2.5 -->
+                            <td>2.86</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>D*</td><!-- Fix -->
+                            <td>18A</td><!-- PC -->
+                            <td>17</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>比亚迪</td><!-- Make -->
+                            <td>宋MAX</td><!-- Model -->
+                            <td>2018</td><!-- Year -->
+                            <td>24</td><!-- 4 -->
+                            <td>T</td><!-- FR -->
+                            <td>60</td><!-- 1.0 -->
+                            <td>3.85</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>18B</td><!-- PC -->
+                            <td>30</td><!-- ID -->
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="position:relative;">
+        <div class="card detail-frame score-detail" id="detailFront"></div>
+
+        <div style="position:absolute;top:10px;right:45px">
+            <label>
+                <input type="checkbox" value="2" id="front" onclick="changeFront(this);"/>
+                <span style="color: #BBBBBB;font-size: small;">假人伤害</span>
+            </label>
+        </div>
+    </section>
+    <section style="position:relative;">
+        <div class="card detail-frame score-detail" id="detailSide"></div>
+        <div style="position:absolute;top:10px;right:45px">
+            <label>
+                <input type="checkbox" value="2" id="side" onclick="changeSide(this);"/>
+                <span style="color: #BBBBBB;font-size: small;">车辆结构</span>
+            </label>
+        </div>
+    </section>
+    <section style="position:relative;">
+        <div class="card detail-frame score-detail" id="detailTop"></div>
+        <div style="position:absolute;top:10px;right:45px">
+            <label>
+                <input type="checkbox" value="2" id="top" onclick="changeTop(this);"/>
+                <span style="color: #BBBBBB;font-size: small;">峰值载荷</span>
+            </label>
+        </div>
+    </section>
+    <!--
+    <section>
+        <div class="card detail-frame score-detail" id="detailRoadUser"></div>
+    </section>
+    -->
+
+    <section>
+        <div class="card">
+            <div class="card__body detail-frame" style="margin-left: 10px">
+                <h4 style="font-weight: bold;">即将测试车型</h4><br>
+                <div class="table-responsive">
+                    <!-- id="data-table-basic,data-table-selection,data-table-command" -->
+                    <table id="list-car-todo" class="table table-striped table--vmiddle"
+                           style="font-family: 'Microsoft YaHei', sans-serif">
+                        <thead>
+                        <tr>
+                            <!-- data-type="numeric"-->
+                            <th data-column-id="make" data-formatter="make">厂商</th>
+                            <th data-column-id="model" data-formatter="model">型号</th>
+                            <th data-column-id="year" data-formatter="year">款式</th>
+                            <th data-visible="false">正面主驾</th>
+                            <th data-visible="false">正面副驾</th>
+                            <th data-visible="false">侧面碰撞</th>
+                            <th data-visible="false">车顶强度</th>
+                            <th data-visible="false">座椅头枕</th>
+                            <th data-visible="false">辅助安全</th>
+                            <th data-visible="false">行人保护</th>
+                            <th data-visible="false">耐撞维修</th>
+                            <th data-column-id="time" data-formatter="time">测试批次</th>
+                            <th data-visible="false">图片</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>长安马自达</td><!-- Make -->
+                            <td>3</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>东风本田</td><!-- Make -->
+                            <td>INSPIRE</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>长安</td><!-- Make -->
+                            <td>CS75Plus</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>海马小鹏</td><!-- Make -->
+                            <td>G3</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>北京奔驰</td><!-- Make -->
+                            <td>GLC260L</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>奇瑞</td><!-- Make -->
+                            <td>捷途X70</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>一汽丰田</td><!-- Make -->
+                            <td>卡罗拉</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>一汽大众奥迪</td><!-- Make -->
+                            <td>A6L</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>T</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>T</td><!-- CM -->
+                            <td>T</td><!-- Top -->
+                            <td>T</td><!-- Seat -->
+                            <td>T</td><!-- Assist -->
+                            <td>T</td><!-- XR -->
+                            <td>T</td><!-- Fix -->
+                            <td>19B</td><!-- PC -->
+                            <td></td><!-- ID -->
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card card__body main-frame" style="text-align: center">
+            <span style="font-size: large;font-weight: bold"><br>
+                <a href="rule.html" target="_blank">中保研评价规程</a></span>
+        </div>
+        <div align='center' class='watermark'>
+            <span class='line-left'></span>
+            <a href="/reward/" target="_blank"> 打赏 </a>
+            <span class='line-right'></span>
+        </div>
+    </section>
+    <br><br>
+    <div style="text-align: center">
+        <span id='busuanzi_container_site_pv'>访问: <span id='busuanzi_value_site_pv'></span></span>
+        <div style="color: #777777">&copy;<span id='footer-copyright'></span> zhoumushui 转载注明出处</div>
+    </div>
+    <br>
+    <div id="image-frame"></div>
+</section>
+
+<script src="vendors/bower_components/jquery/dist/jquery.min.js"></script><!-- jQuery -->
+<script type="text/javascript" src="../resource/js/zms.goup.js"></script><!-- Go Up -->
+<script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script><!-- Bootstrap -->
+<!-- Malihu ScrollBar -->
+<!--<script src="../vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<script src="vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid.min.js"></script><!-- Bootgrid -->
+
+<!-- Placeholder for IE9 -->
+<!--[if IE 9 ]>
+<script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<![endif]-->
+
+<script src="resource/js/data-table.js"></script>
+<script src="resource/js/app.min.js"></script>
+<script src="resource/js/busuanzi.pure.mini.js"></script><!-- busuanzi PV&UV -->
+
+<script>
+    function getCarSafeDescriptionByWord(word) {
+        let SNO = false; // SHOW_NON_OFFICIAL
+        switch (word) {
+            case 'A':
+                return "<span class=\"grade green-bg\">G 优秀</span>";
+            case 'A*':
+                return SNO ? "<span class=\"grade green-bg not-official\">G 优秀*</span>" : "<span class=\"grade grey-bg\"></span>";
+            case 'B': // Adequate
+                return "<span class=\"grade yellow-bg\">A 良好</span>";
+            case 'B*':
+                return SNO ? "<span class=\"grade yellow-bg not-official\">A 良好*</span>" : "<span class=\"grade grey-bg\"></span>";
+            case 'C': // Marginal
+                return "<span class=\"grade orange-bg\">M 一般</span>";
+            case 'C*':
+                return SNO ? "<span class=\"grade orange-bg not-official\">M 一般*</span>" : "<span class=\"grade grey-bg\"></span>";
+            case 'D': // Poor
+                return "<span class=\"grade red-bg\">P 较差</span>";
+            case 'D*':
+                return SNO ? "<span class=\"grade red-bg not-official\">P 较差*</span>" : "<span class=\"grade grey-bg\"></span>";
+            case '-': // None
+                return "<span class=\"grade grey-bg\">未配置</span>";
+            case 'T': // T0D0
+                return "<span class=\"grade grey-bg\">...</span>";
+            default:
+                return "<span class=\"grade grey-bg\">" + word + "</span>";
+        }
+    }
+
+    function getTopDescription(top) {
+        if (top >= 4.0) return getCarSafeDescriptionByWord('A');
+        else if (top >= 3.25) return getCarSafeDescriptionByWord('B');
+        else if (top >= 2.50) return getCarSafeDescriptionByWord('C');
+        else return getCarSafeDescriptionByWord('D');
+    }
+
+    function getFrontDescription(front) {
+        if (front < 4) return getCarSafeDescriptionByWord('A');
+        else if (front < 10) return getCarSafeDescriptionByWord('B');
+        else if (front < 20) return getCarSafeDescriptionByWord('C');
+        else return getCarSafeDescriptionByWord('D');
+    }
+
+    function getSideDescription(side) {
+        if (side < 7) return getCarSafeDescriptionByWord('A');
+        else if (side < 21) return getCarSafeDescriptionByWord('B');
+        else if (side < 33) return getCarSafeDescriptionByWord('C');
+        else return getCarSafeDescriptionByWord('D');
+    }
+
+    function getExplorer() {
+        let explorer = window.navigator.userAgent,
+            compare = function (s) {
+                return (explorer.indexOf(s) >= 0);
+            },
+            ie11 = (function () {
+                return ("ActiveXObject" in window)
+            })();
+        if (compare("MSIE") || ie11) return 'ie';
+        else if (compare("Firefox") && !ie11) return 'Firefox';
+        else if (compare("Chrome") && !ie11) {
+            if (explorer.indexOf("Edge") > -1) return 'Edge';
+            else return 'Chrome';
+        } else if (compare("Opera") && !ie11) return 'Opera';
+        else if (compare("Safari") && !ie11) return 'Safari';
+    }
+
+    $("#list-car").bootgrid({
+        rowCount: -1, // AZ: -1 mains show all
+        css: {
+            icon: 'table-bootgrid__icon zmdi', iconSearch: 'zmdi-search', iconColumns: 'zmdi-view-column',
+            iconDown: 'zmdi-sort-amount-desc', iconRefresh: 'zmdi-refresh', iconUp: 'zmdi-sort-amount-asc',
+            dropDownMenu: 'dropdown form-group--select', search: 'table-bootgrid__search',
+            actions: 'table-bootgrid__actions', header: 'table-bootgrid__header', footer: 'table-bootgrid__footer',
+            dropDownItem: 'table-bootgrid__label', table: 'table table-bootgrid',
+            pagination: 'pagination table-bootgrid__pagination'
+        },
+        templates: {
+            actionDropDown: "<span class=\"{{css.dropDownMenu}}\">" + "<a href='' data-toggle=\"dropdown\">{{ctx.content}}</a><ul class=\"{{css.dropDownMenuItems}}\" role=\"menu\"></ul></span>",
+            search: "", header: "",
+            actionDropDownCheckboxItem: "<li><div class='tabe-bootgrid__checkbox checkbox checkbox--dark'><label class=\"{{css.dropDownItem}}\"><input name=\"{{ctx.name}}\" type=\"checkbox\" value=\"1\" class=\"{{css.dropDownItemCheckbox}}\" {{ctx.checked}} /> {{ctx.label}}<i class='input-helper'></i></label></div></li>",
+            footer: "<div id='watermark' align='center' class='watermark' style='display: none'>" +
+                "<span class='line-left'></span>" +
+                "<span class='text'>zhoumushui.com/car</span>" +
+                "<span class='line-right'></span>" +
+                "</div>"
+
+        },
+        formatters: {
+            "model": function (column, row) {
+                return "<span class='car-model'>" + row.model + "</span>";
+            },
+            "year": function (column, row) {
+                return "<span class='car-year'>" + row.year + "</span>";
+            },
+            "front": function (column, row) {
+                return "<a title='正面主驾'>" + getFrontDescription(row.front) + "</a>";
+            },
+            "front_r": function (column, row) {
+                return "<a title='正面副驾'>" + getFrontDescription(row.front_r) + "</a>";
+            },
+            "side": function (column, row) {
+                return "<a title='侧面碰撞'>" + getSideDescription(row.side) + "</a>";
+            },
+            "top": function (column, row) {
+                return "<a title='车顶强度'>" + getTopDescription(row.top) + "</a>";
+            },
+            "seat": function (column, row) {
+                return "<a title='座椅头枕'>" + getCarSafeDescriptionByWord(row.seat) + "</a>";
+            },
+            "assist": function (column, row) {
+                return "<a title='辅助安全'>" + getCarSafeDescriptionByWord(row.assist) + "</a>";
+            },
+            "XR": function (column, row) {
+                return "<a title='行人保护'>" + getCarSafeDescriptionByWord(row.XR) + "</a>";
+            },
+            "fix": function (column, row) {
+                return "<a title='耐撞维修'>" + getCarSafeDescriptionByWord(row.fix) + "</a>";
+            },
+            "link": function (column, row) {
+                if (row.link) {
+                    // let linkPrefix = 'http://ciasi.org.cn/home/safety/pageone/id/';
+                    // return "<span style='font-size: 15px' >" +
+                    //     "<a target='_blank' href=\"" + linkPrefix + row.link + ".html\">"
+                    //     + "<i class=\"btn-detail-link zmdi zmdi-link\"></i>"
+                    //     + "</a>" +
+                    //     "</span>";
+                    return "<button title='" + row.model + "' id='btn" + row.link + "' class='btn-view-image'>" +
+                        "<i class='btn-detail-link zmdi zmdi-image-o'></i>" +
+                        "</button>";
+                } else return "<i class=\"btn-detail-nolink zmdi zmdi-more\"></i>";
+            },
+            "make": function (column, row) {
+                return getLogoByMake(row.make, 0, 0) + "<span class='car-make'>" + row.make + "</span>"/* + getCountryByMake(row.make) */;
+            }
+        }
+    });
+
+    $("#list-car-todo").bootgrid({
+        rowCount: -1, // AZ: -1 mains show all
+        css: {
+            icon: 'table-bootgrid__icon zmdi', iconSearch: 'zmdi-search', iconColumns: 'zmdi-view-column',
+            iconDown: 'zmdi-sort-amount-desc', iconRefresh: 'zmdi-refresh', iconUp: 'zmdi-sort-amount-asc',
+            dropDownMenu: 'dropdown form-group--select', search: 'table-bootgrid__search',
+            actions: 'table-bootgrid__actions', header: 'table-bootgrid__header', footer: 'table-bootgrid__footer',
+            dropDownItem: 'table-bootgrid__label', table: 'table table-bootgrid',
+            pagination: 'pagination table-bootgrid__pagination'
+        },
+        templates: {
+            actionDropDown: "<span class=\"{{css.dropDownMenu}}\">" + "<a href='' data-toggle=\"dropdown\">{{ctx.content}}</a><ul class=\"{{css.dropDownMenuItems}}\" role=\"menu\"></ul></span>",
+            search: "", header: "",
+            actionDropDownCheckboxItem: "<li><div class='tabe-bootgrid__checkbox checkbox checkbox--dark'><label class=\"{{css.dropDownItem}}\"><input name=\"{{ctx.name}}\" type=\"checkbox\" value=\"1\" class=\"{{css.dropDownItemCheckbox}}\" {{ctx.checked}} /> {{ctx.label}}<i class='input-helper'></i></label></div></li>",
+            footer: ""
+        },
+        formatters: {
+            "make": function (column, row) {
+                return getLogoByMake(row.make, 0, 1) + "<span class='car-make'>" + row.make + "</span>"/* + getCountryByMake(row.make) */;
+            },
+            "model": function (column, row) {
+                return "<span class='car-model'>" + row.model + "</span>";
+            },
+            "year": function (column, row) {
+                return "<span class='car-year'>" + row.year + "</span>";
+            },
+            "time": function (column, row) {
+                return "20" + row.time.replace('A', ' 第一批').replace('B', ' 第二批');
+            }
+        }
+    });
+</script>
+<!-- Light Gallery -->
+<script src="vendors/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+<script src="vendors/bower_components/lightgallery/demo/js/lg-fullscreen.min.js"></script>
+<script src="vendors/bower_components/lightgallery/demo/js/lg-thumbnail.min.js"></script>
+<script src="vendors/bower_components/lightgallery/demo/js/lg-zoom.min.js"></script>
+<script src="vendors/bower_components/lightgallery/demo/js/lg-video.min.js"></script>
+
+<script src="js/echarts.min.graphic.js"></script>
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>-->
+<script>
+    function initDataFront() {
+        let legendData = ['正面左侧25%偏置'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', );
+        // addData('本田INSPIRE', );
+        // addData('长安CS75Plus', );
+        // addData('小鹏G3', );
+        // addData('奔驰GLC260L', );
+        // addData('奇瑞捷途X70', );
+        // addData('丰田卡罗拉', );
+        // addData('奥迪A6L', );
+        addData('大众帕萨特', 44);
+        addData('大众途观L', 24);
+        addData('比亚迪宋MAX', 24);
+        addData('别克GL8', 24);
+        addData('起亚智跑', 24);
+        addData('奔腾T77', 24);
+        addData('东风AX7', 23);
+        addData('宝骏510', 22);
+        addData('奇瑞艾瑞泽5', 18);
+        addData('现代菲斯塔', 18);
+        addData('绅宝D50', 17);
+        addData('江淮瑞风S3', 16);
+        addData('日产西玛', 16);
+        addData('宝马318i', 14);
+        addData('大众迈腾', 12);
+        addData('本田凌派', 12);
+        addData('别克昂科威', 12);
+        addData('吉利星越', 12);
+        addData('斯柯达柯迪亚克', 9);
+        addData('本田思域', 9);
+        addData('传祺GS7', 9);
+        addData('众泰T600', 8);
+        addData('雷诺科雷傲', 8);
+        addData('吉普大指挥官', 8);
+        addData('本田雅阁', 6);
+        addData('凯迪拉克XT4', 6);
+        addData('奔驰C200', 6);
+        addData('福特福克斯', 5);
+        addData('哈弗F5', 4);
+        addData('三菱欧蓝德', 4);
+        addData('雪佛兰科鲁泽', 4);
+        addData('魏派VV5', 2);
+        addData('现代领动', 2);
+        addData('比亚迪唐', 2);
+        addData('领克01', 2);
+        addData('丰田凯美瑞', 2);
+        addData('日产天籁', 0);
+        addData('丰田亚洲龙', 0);
+        addData('宝马325Li', 0);
+        addData('丰田雷凌', 0);
+        addData('荣威RX5 MAX', 0);
+        addData('沃尔沃XC60', 0);
+        addData('丰田奕泽', 0);
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true, barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value < 4) return "#4CAF50";
+                            else if (params.value < 10) return "#FFEB3B";
+                            else if (params.value < 20) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                }, label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailFront', "正面左侧25%偏置碰撞", "（分数越低越好）", legendData, arrayCar, seriesValue);
+    }
+
+
+    function initDataFrontPeopleHarm() {
+        let legendData = ['正面左侧25%偏置 - 假人伤害'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', );
+        // addData('本田INSPIRE', );
+        // addData('长安CS75Plus', );
+        // addData('小鹏G3', );
+        // addData('奔驰GLC260L', );
+        // addData('奇瑞捷途X70', );
+        // addData('丰田卡罗拉', );
+        // addData('奥迪A6L', );
+        addData('大众帕萨特', 24);
+        addData('大众途观L', 14);
+        addData('东风AX7', 7);
+        addData('宝骏510', 6);
+        addData('比亚迪宋MAX', 4);
+        addData('别克GL8', 4);
+        addData('起亚智跑', 4);
+        addData('奔腾T77', 4);
+        addData('江淮瑞风S3', 4);
+        addData('宝马318i', 4);
+        addData('众泰T600', 4);
+        addData('奔驰C200', 4);
+        addData('奇瑞艾瑞泽5', 2);
+        addData('现代菲斯塔', 2);
+        addData('绅宝D50', 1);
+        addData('斯柯达柯迪亚克', 1);
+        addData('本田思域', 1);
+        addData('传祺GS7', 1);
+        addData('福特福克斯', 1);
+        addData('日产西玛', 0);
+        addData('大众迈腾', 0);
+        addData('本田凌派', 0);
+        addData('别克昂科威', 0);
+        addData('吉利星越', 0);
+        addData('雷诺科雷傲', 0);
+        addData('本田雅阁', 0);
+        addData('哈弗F5', 0);
+        addData('魏派VV5', 0);
+        addData('三菱欧蓝德', 0);
+        addData('凯迪拉克XT4', 0);
+        addData('雪佛兰科鲁泽', 0);
+        addData('现代领动', 0);
+        addData('吉普大指挥官', 0);
+        addData('比亚迪唐', 0);
+        addData('领克01', 0);
+        addData('丰田凯美瑞', 0);
+        addData('日产天籁', 0);
+        addData('丰田亚洲龙', 0);
+        addData('宝马325Li', 0);
+        addData('丰田雷凌', 0);
+        addData('荣威RX5 MAX', 0);
+        addData('沃尔沃XC60', 0);
+        addData('丰田奕泽', 0);
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true, barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value < 1) return "#4CAF50";
+                            else if (params.value < 3) return "#FFEB3B";
+                            else if (params.value < 5) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                }, label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailFront', "正面左侧25%偏置碰撞 - 假人伤害", "（伤害越低越好）", legendData, arrayCar, seriesValue);
+    }
+
+    function initDataSide() {
+        let legendData = ['侧面碰撞'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', ); //
+        // addData('本田INSPIRE', ); //
+        // addData('长安CS75Plus', ); //
+        // addData('小鹏G3', ); //
+        // addData('奔驰GLC260L', ); //
+        // addData('奇瑞捷途X70', ); //
+        // addData('丰田卡罗拉', ); //
+        // addData('奥迪A6L', ); //
+        addData('本田思域', 84); // 8.0
+        addData('宝骏510', 80); // 2.5
+        addData('比亚迪宋MAX', 60); // 1.0
+        addData('奇瑞艾瑞泽5', 58); // 10.5
+        addData('江淮瑞风S3', 56); // 4.5
+        addData('现代领动', 44); // 11.0
+        addData('绅宝D50', 38); // 6.0
+        addData('斯柯达柯迪亚克', 34); // 11.5
+        addData('哈弗F5', 32); // 17.5
+        addData('奔腾T77', 30); // 23.5
+        addData('现代菲斯塔', 28); // 10.5
+        addData('别克GL8', 26); // 8.0
+        addData('本田凌派', 24); // 12.5
+        addData('大众帕萨特', 22); // 13.0
+        addData('雪佛兰科鲁泽', 14); // 11.5
+        addData('本田雅阁', 14); // 14.5
+        addData('三菱欧蓝德', 12); //  9.0
+        addData('大众迈腾', 10); // 12.0
+        addData('起亚智跑', 10); // 13.0
+        addData('别克昂科威', 10); // 13.0
+        addData('魏派VV5', 10); // 18.0
+        addData('奔驰C200', 10); // 20.0
+        addData('传祺GS7', 8); // 14.5
+        addData('东风AX7', 8);// 15.0
+        addData('大众途观L', 8); // 18.0
+        addData('比亚迪唐', 8); // 21.5
+        addData('雷诺科雷傲', 6); //  4.5
+        addData('日产天籁', 6); // 10.5
+        addData('吉利星越', 6); // 17.0
+        addData('福特福克斯', 4); // 21.0
+        addData('日产西玛', 2); //  5.5
+        addData('宝马318i', 2); // 18.5
+        addData('众泰T600', 0); // 14.0
+        addData('丰田凯美瑞', 0); // 15.5
+        addData('吉普大指挥官', 0);  // 16.0
+        addData('领克01', 0); // 16.0
+        addData('丰田亚洲龙', 0); // 16.5
+        addData('宝马325Li', 0); // 17.5
+        addData('丰田雷凌', 0); // 17.5
+        addData('凯迪拉克XT4', 0); // 18.5
+        addData('荣威RX5 MAX', 0); // 20.5
+        addData('沃尔沃XC60', 0); // 26.0
+        addData('丰田奕泽', 0); // 31.5
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true, barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value < 7) return "#4CAF50";
+                            else if (params.value < 21) return "#FFEB3B";
+                            else if (params.value < 33) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                }, label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailSide', "侧面碰撞", "（分数越低越好）", legendData, arrayCar, seriesValue);
+    }
+
+    function initDataSideLength() {
+        let legendData = ['侧面碰撞 - B柱与座椅中线距离'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', );
+        // addData('本田INSPIRE', );
+        // addData('长安CS75Plus', );
+        // addData('小鹏G3', );
+        // addData('奔驰GLC260L', );
+        // addData('奇瑞捷途X70', );
+        // addData('丰田卡罗拉', );
+        // addData('奥迪A6L', );
+        addData('比亚迪宋MAX', 1.0);
+        addData('宝骏510', 2.5);
+        addData('江淮瑞风S3', 4.5);
+        addData('雷诺科雷傲', 4.5);
+        addData('日产西玛', 5.5);
+        addData('绅宝D50', 6.0);
+        addData('本田思域', 8.0);
+        addData('别克GL8', 8.0);
+        addData('三菱欧蓝德', 9.0);
+        addData('奇瑞艾瑞泽5', 10.5);
+        addData('现代菲斯塔', 10.5);
+        addData('日产天籁', 10.5);
+        addData('现代领动', 11.0);
+        addData('斯柯达柯迪亚克', 11.5);
+        addData('雪佛兰科鲁泽', 11.5);
+        addData('大众迈腾', 12.0);
+        addData('本田凌派', 12.5);
+        addData('大众帕萨特', 13.0);
+        addData('起亚智跑', 13.0);
+        addData('别克昂科威', 13.0);
+        addData('众泰T600', 14.0);
+        addData('本田雅阁', 14.5);
+        addData('传祺GS7', 14.5);
+        addData('东风AX7', 15.0);
+        addData('丰田凯美瑞', 15.5);
+        addData('吉普大指挥官', 16.0);
+        addData('领克01', 16.0);
+        addData('丰田亚洲龙', 16.5);
+        addData('吉利星越', 17.0);
+        addData('哈弗F5', 17.5);
+        addData('宝马325Li', 17.5);
+        addData('丰田雷凌', 17.5);
+        addData('魏派VV5', 18.0);
+        addData('大众途观L', 18.0);
+        addData('宝马318i', 18.5);
+        addData('凯迪拉克XT4', 18.5);
+        addData('奔驰C200', 20.0);
+        addData('荣威RX5 MAX', 20.5);
+        addData('福特福克斯', 21.0);
+        addData('比亚迪唐', 21.5);
+        addData('奔腾T77', 23.5);
+        addData('沃尔沃XC60', 26.0);
+        addData('丰田奕泽', 31.5);
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true, barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value > 16) return "#4CAF50";
+                            else if (params.value > 14) return "#FFEB3B";
+                            else if (params.value > 9) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                }, label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailSide', "侧面碰撞 - B柱与座椅中线距离", "（距离越大越好）", legendData, arrayCar, seriesValue);
+    }
+
+    function initDataTop() {
+        let legendData = ['车顶强度'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', );
+        // addData('本田INSPIRE', );
+        // addData('长安CS75Plus', );
+        // addData('小鹏G3', );
+        // addData('奔驰GLC260L', );
+        // addData('奇瑞捷途X70', );
+        // addData('丰田卡罗拉', );
+        // addData('奥迪A6L', );
+        addData('雷诺科雷傲', 2.70);
+        addData('宝骏510', 2.86);
+        addData('三菱欧蓝德', 2.89);
+        addData('绅宝D50', 3.31);
+        addData('东风AX7', 3.42);
+        addData('别克GL8', 3.51);
+        addData('日产西玛', 3.57);
+        addData('魏派VV5', 3.60);
+        addData('起亚智跑', 3.70);
+        addData('传祺GS7', 3.75);
+        addData('众泰T600', 3.79);
+        addData('比亚迪宋MAX', 3.85);
+        addData('江淮瑞风S3', 3.90);
+        addData('比亚迪唐', 4.04);
+        addData('本田雅阁', 4.15);
+        addData('现代菲斯塔', 4.17);
+        addData('别克昂科威', 4.36);
+        addData('雪佛兰科鲁泽', 4.36);
+        addData('大众途观L', 4.44);
+        addData('本田凌派', 4.49);
+        addData('哈弗F5', 4.51);
+        addData('吉普大指挥官', 4.52);
+        addData('奇瑞艾瑞泽5', 4.53);
+        addData('斯柯达柯迪亚克', 4.55);
+        addData('凯迪拉克XT4', 4.59);
+        addData('日产天籁', 4.73);
+        addData('宝马318i', 4.89);
+        addData('沃尔沃XC60', 5.06);
+        addData('吉利星越', 5.10);
+        addData('大众迈腾', 5.12);
+        addData('领克01', 5.21);
+        addData('现代领动', 5.32);
+        addData('本田思域', 5.34);
+        addData('大众帕萨特', 5.41);
+        addData('荣威RX5 MAX', 5.41);
+        addData('福特福克斯', 5.61);
+        addData('丰田雷凌', 5.66);
+        addData('奔腾T77', 5.74);
+        addData('丰田奕泽', 5.75);
+        addData('丰田凯美瑞', 5.98);
+        addData('丰田亚洲龙', 6.03);
+        addData('奔驰C200', 6.06);
+        addData('宝马325Li', 6.11);
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true,//鼠标悬停时显示label数据
+                        barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value >= 4.0) return "#4CAF50";
+                            else if (params.value >= 3.25) return "#FFEB3B";
+                            else if (params.value >= 2.50) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                },
+                label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailTop', "车顶强度", "（分数越高越好）", legendData, arrayCar, seriesValue);
+    }
+
+    function initDataTopWeight() {
+        let legendData = ['车顶强度 - 峰值载荷'];
+        let arrayCar = [];
+        let seriesValue = [];
+        let arrayScore = [];
+
+        function addData(car, score) {
+            arrayCar.push(car);
+            arrayScore.push(score);
+        }
+
+        // addData('马自达3', );
+        // addData('本田INSPIRE', );
+        // addData('长安CS75Plus', );
+        // addData('小鹏G3', );
+        // addData('奔驰GLC260L', );
+        // addData('奇瑞捷途X70', );
+        // addData('丰田卡罗拉', );
+        // addData('奥迪A6L', );
+        addData('宝骏510', 33686);
+        addData('雷诺科雷傲', 40011);
+        addData('绅宝D50', 40902);
+        addData('三菱欧蓝德', 43344);
+        addData('江淮瑞风S3', 49523);
+        addData('雪佛兰科鲁泽', 51797);
+        addData('起亚智跑', 52579);
+        addData('东风AX7', 53085);
+        addData('现代菲斯塔', 53681);
+        addData('日产西玛', 54581);
+        addData('本田凌派', 55294);
+        addData('奇瑞艾瑞泽5', 58834);
+        addData('众泰T600', 59105);
+        addData('本田雅阁', 59598);
+        addData('魏派VV5', 60085);
+        addData('比亚迪宋MAX', 63299);
+        addData('传祺GS7', 63944);
+        addData('本田思域', 64661);
+        addData('别克GL8', 65275);
+        addData('别克昂科威', 67823);
+        addData('大众途观L', 67876);
+        addData('现代领动', 68056);
+        addData('日产天籁', 68241);
+        addData('哈弗F5', 69343);
+        addData('斯柯达柯迪亚克', 69956);
+        addData('大众迈腾', 71112);
+        addData('福特福克斯', 72028);
+        addData('宝马318i', 73033);
+        addData('凯迪拉克XT4', 73686);
+        addData('丰田雷凌', 74473);
+        addData('比亚迪唐', 74827);
+        addData('大众帕萨特', 76511);
+        addData('吉利星越', 80815);
+        addData('领克01', 83734);
+        addData('丰田奕泽', 83990);
+        addData('荣威RX5 MAX', 84042);
+        addData('奔腾T77', 84100);
+        addData('吉普大指挥官', 87564);
+        addData('丰田凯美瑞', 90059);
+        addData('沃尔沃XC60', 91677);
+        addData('丰田亚洲龙', 93385);
+        addData('奔驰C200', 94379);
+        addData('宝马325Li', 95952);
+        for (let i = 0; i < legendData.length; i++) {
+            let seriesDataVal = null;
+            seriesDataVal = {
+                barWidth: 10, type: 'bar',
+                itemStyle: {
+                    normal: {
+                        show: true,//鼠标悬停时显示label数据
+                        barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        color: function (params) {
+                            if (params.value >= 60000) return "#4CAF50";
+                            else if (params.value >= 50000) return "#FFEB3B";
+                            else if (params.value >= 40000) return "#FF9800";
+                            else return "#f44336";
+                        }
+                    }
+                },
+                label: {normal: {show: true, position: 'right'}}, data: arrayScore
+            };
+            seriesValue.push(seriesDataVal);
+        }
+        buildChart('detailTop', "车顶强度 - 峰值载荷", "（分数越高越好）", legendData, arrayCar, seriesValue);
+    }
+
+    function buildChart(chartId, title, subTitle, legendData, arrayCar, seriesValue) {
+        let chart = document.getElementById(chartId);
+        let echart = echarts.init(chart);
+        let option = {
+            title: {
+                text: title, x: "center", y: "0", textStyle: {fontSize: 18, fontWeight: 'bold', color: '#DDDDDD'},
+                subtext: subTitle, subtextStyle: {fontSize: 12, color: '#DDDDDD'},
+            },
+            tooltip: {trigger: 'axis', axisPointer: {type: 'shadow'}},
+            toolbox: {
+                show: true, feature: {saveAsImage: {show: true},},
+                iconStyle: {normal: {borderWidth: 1, borderColor: '#ccc'}}
+            },
+            legend: {show: true, x: 'left', y: 'top', padding: [15, 0, 0, 10]},//图例说明文字设置
+            grid: {left: '3%', right: '4%', bottom: '5%', top: '6%', containLabel: true},
+            yAxis: [{
+                min: 0, type: 'category', data: arrayCar, axisLabel: {color: '#DDDDDD'},// 刻度线标签
+                axisLine: {lineStyle: {color: '#DDDDDD'}}// 坐标轴
+            }],
+            xAxis: [{
+                min: 0, type: 'value', splitArea: {show: false}, axisLabel: {color: '#DDDDDD'},// 刻度线标签
+                axisLine: {lineStyle: {color: '#DDDDDD'}}// 坐标轴
+            }],
+            label: {normal: {show: true, position: 'top'}},//显示bar数据
+            series: seriesValue, backgroundColor: '#2b3942',
+            graphic: [
+                {
+                    type: 'group', rotation: 0, bounding: 'raw', left: 56, top: 18, z: 100,
+                    children: [
+                        {
+                            type: 'rect', left: 'center', top: 'center', z: 100, id: 'watermark_back', invisible: true,
+                            shape: {width: 103, height: 32}, style: {fill: 'rgba(34,49,58,1)'}
+                        },
+                        {
+                            type: 'text', left: 'center', top: 'center', z: 100, id: 'watermark_text', invisible: true,
+                            style: {fill: '#009688', font: 'normal 13px', text: '中  保  研  ·  汇  总 \nzhoumushui.com'}
+                        }
+                    ]
+                }
+            ]
+        };
+        echart.setOption(option);
+    }
+
+    let arrayId = [ // FIXME
+        4, 7, 8, 9, 12, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+        30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
+        40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
+        50, 51
+    ];
+    let contentImgFrame = "";
+    for (let i = 0; i < arrayId.length; i++) {
+        let id = arrayId[i];
+        contentImgFrame += "<span class='lightbox'>" +
+            "<span id='img" + id + "' data-src='img/" + id + "/front.jpg'>" +
+            "<a href='javascript:;' title='图片' target='_blank'><i class='zmdi zmdi-image'></i></a>" +
+            "<img style='display: none' src='img/front.png'/></span>" +
+            "<span data-src='img/" + id + "/side.jpg'><img style='display: none' src='img/side.png'/></span>" +
+            "<span data-src='img/" + id + "/top.jpg'><img style='display: none' src='img/top.png'/></span>" +
+            //"<span data-src='img/" + i + "/fcw.jpg'><img style='display: none' src='img/fcw.png'/></span>" +
+            "</span>";
+    }
+    document.getElementById("image-frame").innerHTML = "<div style='display: none'>" + contentImgFrame + "</div>";
+
+    window.onload = function bindClick() {
+        for (let i = 0; i < arrayId.length; i++) {
+            let id = arrayId[i];
+            document.getElementById("btn" + id).onclick = function () {
+                document.getElementById("img" + id).click();
+            }
+        }
+        initDataFront();
+        initDataSide();
+        initDataTop();
+        //initDataRoadUser();
+    }
+
+    function changeFront(o) {
+        if (o.checked) initDataFrontPeopleHarm();
+        else initDataFront();
+    }
+
+    function changeSide(o) {
+        if (o.checked) initDataSideLength();
+        else initDataSide();
+    }
+
+    function changeTop(o) {
+        if (o.checked) initDataTopWeight();
+        else initDataTop();
+    }
+</script>
+<script src="js/html2canvas.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/canvas2image.js" type="text/javascript" charset="utf-8" async defer></script>
+<script>
+    $('#btnSaveImage').click(function (e) {
+        document.getElementById("btnSaveImage").style.display = "none";
+        document.getElementById("watermark").style.display = "";
+        html2canvas(document.getElementById("content")).then(function (canvas) {
+            let date = new Date();
+            let month = (date.getMonth() + 1);
+            let day = date.getDate();
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+            let fileName = "中保研_" + date.getFullYear() + month + day + ".png";
+            let shift = 10; // 偏移
+            let webType = getExplorer();
+            if (webType == 'Edge' || webType == 'ie') shift = 0;
+            console.log("getExplorer:" + getExplorer() + ";shift=" + shift); // Chrome Edge
+            Canvas2Image.saveAsImageToName(canvas, canvas.width, canvas.height, 'png', fileName, shift); // jpeg
+        });
+        document.getElementById("btnSaveImage").style.display = "";
+        document.getElementById("watermark").style.display = "none";
+    });
+</script>
+
+<script>
+    var directoryDepth = 0;
+    document.getElementById("footer-copyright").innerHTML = "" + new Date().getFullYear();
+</script>
+<script src="resource/js/zms.page.pattern.js"></script>
+</body>
+</html>

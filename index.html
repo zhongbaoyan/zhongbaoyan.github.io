@@ -9,17 +9,9 @@
     <meta name="description" content="中保研碰撞测试汇总">
     <meta name="keywords" content="中保研,碰撞测试,中保研汇总,中保研测试汇总,中保研碰撞测试汇总">
     <title>中保研测试汇总</title>
-    <!-- Animate CSS -->
-    <!--<link href="../vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">-->
-    <!-- Material Design Icons -->
     <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css"
           rel="stylesheet">
-    <!-- Malihu Scrollbar -->
-    <!--<link href="../vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css"
-          rel="stylesheet">-->
-    <!-- Light Gallery -->
     <link href="vendors/bower_components/lightgallery/dist/css/lightgallery.min.css" rel="stylesheet">
-    <!-- Bootgrid -->
     <link href="vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid.min.css" rel="stylesheet">
     <link href="resource/css/az.css" rel="stylesheet">
 
@@ -30,9 +22,9 @@
     <link href="css/site.car.css" rel="stylesheet">
     <style>
         .car-logo {
-            width: 24px; /* 30px;3 */
-            height: 16px; /* 20px;2 */
-            margin-right: 15px; /* 18px */
+            width: 24px;
+            height: 16px;
+            margin-right: 15px;
         }
 
         .grade {
@@ -79,12 +71,22 @@
         }
 
         .btn-detail-link {
-            font-size: large;
+            font-size: 22px;
             color: #AAAAAA;
         }
 
         .btn-detail-link:hover {
-            font-size: large;
+            font-size: 22px;
+            color: #EEEEEE;
+        }
+
+        .btn-detail-link-s {
+            font-size: 18px;
+            color: #AAAAAA;
+        }
+
+        .btn-detail-link-s:hover {
+            font-size: 18px;
             color: #EEEEEE;
         }
 
@@ -149,6 +151,12 @@
             background: linear-gradient(to right, #f44336, #FFEB3B, #4CAF50);
         }
 
+        .line-vertical {
+            vertical-align: top;
+            margin: 0px 5px 0px 7px;
+            color: #607D8B;
+        }
+
         .main-frame {
             padding: 0px 5px 30px 5px;
         }
@@ -198,7 +206,7 @@
                             <th data-column-id="XR" data-formatter="XR">行人保护</th>
                             <th data-column-id="fix" data-formatter="fix">耐撞维修</th>
                             <th data-visible="false">测试批次</th>
-                            <th data-column-id="link" data-formatter="link" data-sortable="false">图片</th>
+                            <th data-column-id="link" data-formatter="link" data-sortable="false">图片链接</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -1099,7 +1107,7 @@
                         <tr>
                             <td>一汽大众奥迪</td><!-- Make -->
                             <td>Q5L</td><!-- Model -->
-                            <td></td><!-- Year -->
+                            <td>2020</td><!-- Year -->
                             <td>T</td><!-- FL -->
                             <td>T</td><!-- FR -->
                             <td>T</td><!-- CM -->
@@ -1120,7 +1128,7 @@
     <section>
         <div class="card card__body " style="text-align: center">
             <span style="font-size: large;font-weight: bold">
-                <a href="rule/" target="_blank">评分标准与排行规则</a></span>
+                <a href="rule/" target="_blank"><i class="zmdi zmdi-chart"></i> 评分标准与排行规则</a></span>
         </div>
         <div align='center' class='watermark'>
             <span class='line-left'></span>
@@ -1131,7 +1139,10 @@
     <br><br>
     <div style="text-align: center">
         <!--<span id='busuanzi_container_site_pv'>访问: <span id='busuanzi_value_site_pv'></span></span>-->
-        <span style="color: #777777"><!--&copy;<span id='footer-copyright'></span>-->转载注明出处</span>
+        <span style="color: #777777">
+            <i class="zmdi zmdi-share"></i>
+            <!--&copy;<span id='footer-copyright'></span>-->转载注明出处
+        </span>
     </div>
     <br>
     <div id="image-frame"></div>
@@ -1140,8 +1151,6 @@
 <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script><!-- jQuery -->
 <script type="text/javascript" src="resource/js/zms.goup.js"></script><!-- Go Up -->
 <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script><!-- Bootstrap -->
-<!-- Malihu ScrollBar -->
-<!--<script src="../vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>-->
 <script src="vendors/bower_components/jquery.bootgrid/dist/jquery.bootgrid.min.js"></script><!-- Bootgrid -->
 
 <!-- Placeholder for IE9 -->
@@ -1274,16 +1283,15 @@
             },
             "link": function (column, row) {
                 if (row.link) {
-                    // let linkPrefix = 'http://ciasi.org.cn/home/safety/pageone/id/';
-                    // return "<span style='font-size: 15px' >" +
-                    //     "<a target='_blank' href=\"" + linkPrefix + row.link + ".html\">"
-                    //     + "<i class=\"btn-detail-link zmdi zmdi-link\"></i>"
-                    //     + "</a>" +
-                    //     "</span>";
-                    return "<button title='" + row.model + "' id='btn" + row.link + "' class='btn-view-image'>" +
-                        "<i class='btn-detail-link zmdi zmdi-image-o'></i>" +
-                        "</button>";
-                } else return "<i class=\"btn-detail-nolink zmdi zmdi-more\"></i>";
+                    return "<a title='" + row.model + "' id='btn" + row.link + "' class='btn-view-image'>"
+                        + "<i class='btn-detail-link-s zmdi zmdi-image-o'></i>"
+                        + "</a>"
+                        + "<span class='line-vertical'>|</span>"
+                        + "<a target='_blank' title='" + row.model
+                        + "' href='http://ciasi.org.cn/home/safety/pageone/id/" + row.link + ".html'>"
+                        + "<i class='btn-detail-link zmdi zmdi-link'></i>"
+                        + "</a>";
+                } else return "<i class='btn-detail-nolink zmdi zmdi-more'></i>";
             },
             "make": function (column, row) {
                 return getLogoByMake(row.make, 0, 0) + "<span class='car-make'>" + row.make + "</span>"/* + getCountryByMake(row.make) */;
@@ -1381,8 +1389,8 @@
         addData('哈弗F5', 4);
         addData('三菱欧蓝德', 4);
         addData('雪佛兰科鲁泽', 4);
-        addData('魏派VV5', 2);
         addData('现代领动', 2);
+        addData('魏派VV5', 2);
         addData('比亚迪唐', 2);
         addData('长安CS75Plus', 2);
         addData('领克01', 2);
@@ -1459,16 +1467,16 @@
         addData('吉利星越', 0);
         addData('本田INSPIRE', 0);
         addData('雷诺科雷傲', 0);
-        addData('本田雅阁', 0);
         addData('哈弗F5', 0);
-        addData('长安CS75Plus', 0);
         addData('三菱欧蓝德', 0);
-        addData('凯迪拉克XT4', 0);
-        addData('雪佛兰科鲁泽', 0);
         addData('现代领动', 0);
+        addData('雪佛兰科鲁泽', 0);
+        addData('本田雅阁', 0);
         addData('吉普大指挥官', 0);
+        addData('凯迪拉克XT4', 0);
         addData('魏派VV5', 0);
         addData('比亚迪唐', 0);
+        addData('长安CS75Plus', 0);
         addData('领克01', 0);
         addData('丰田凯美瑞', 0);
         addData('日产天籁', 0);
@@ -1766,7 +1774,6 @@
         // addData('马自达3', );
         // addData('奔驰GLC260L', );
         // addData('奇瑞捷途X70', );
-        // addData('丰田卡罗拉', );
         // addData('奥迪A6L', );
         addData('宝骏510', 33686);
         addData('雷诺科雷傲', 40011);

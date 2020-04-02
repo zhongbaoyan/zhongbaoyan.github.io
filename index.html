@@ -1244,10 +1244,10 @@
             search: "", header: "",
             actionDropDownCheckboxItem: "<li><div class='tabe-bootgrid__checkbox checkbox checkbox--dark'><label class=\"{{css.dropDownItem}}\"><input name=\"{{ctx.name}}\" type=\"checkbox\" value=\"1\" class=\"{{css.dropDownItemCheckbox}}\" {{ctx.checked}} /> {{ctx.label}}<i class='input-helper'></i></label></div></li>",
             footer: "<div id='watermark' align='center' class='watermark' style='display: none'>" +
-                "<span class='line-left'></span>" +
-                "<span class='text'>zhongbaoyan.github.io</span>" +
-                "<span class='line-right'></span>" +
-                "</div>"
+            "<span class='line-left'></span>" +
+            "<span class='text'>zhongbaoyan.github.io</span>" +
+            "<span class='line-right'></span>" +
+            "</div>"
         },
         formatters: {
             "model": function (column, row) {
@@ -1289,6 +1289,11 @@
                         + "<a target='_blank' title='" + row.model
                         + "' href='http://ciasi.org.cn/home/safety/pageone/id/" + row.link + ".html'>"
                         + "<i class='btn-detail-link zmdi zmdi-link'></i>"
+                        //+ "</a>"
+                        //+ "<span class='line-vertical'>|</span>"
+                        //+ "<a target='_blank' title='" + row.model
+                        //+ "' href='" + getVideoLinkById(row.link) + "'>"
+                        //+ "<i class='btn-detail-link zmdi zmdi-videocam'></i>"
                         + "</a>";
                 } else return "<i class='btn-detail-nolink zmdi zmdi-more'></i>";
             },
@@ -1868,21 +1873,24 @@
             }],
             label: {normal: {show: true, position: 'top'}},//显示bar数据
             series: seriesValue, backgroundColor: '#2b3942',
-            graphic: [
-                {
-                    type: 'group', rotation: 0, bounding: 'raw', left: 56, top: 18, z: 100,
-                    children: [
-                        {
-                            type: 'rect', left: 'center', top: 'center', z: 100, id: 'watermark_back', invisible: true,
-                            shape: {width: 103, height: 32}, style: {fill: 'rgba(34,49,58,1)'}
-                        },
-                        {
-                            type: 'text', left: 'center', top: 'center', z: 100, id: 'watermark_text', invisible: true,
-                            style: {fill: '#009688', font: 'normal 13px', text: '中  保  研  ·  汇  总 \nzhoumushui.com'}
-                        }
-                    ]
-                }
-            ]
+            //graphic: [
+            //    {
+            //        type: 'group', rotation: 0, bounding: 'raw', left: 70, top: 20, z: 100,
+            //        children: [
+            //            {
+            //                type: 'rect', left: 'center', top: 'center', z: 100, id: 'watermark_back', invisible: false,
+            //                shape: {width: 140, height: 40}, style: {fill: 'rgba(34,49,58,1)'}
+            //            },
+            //            {
+            //                type: 'text', left: 'center', top: 'center', z: 100, id: 'watermark_text', invisible: false,
+            //                style: {
+            //                    fill: '#009688', font: 'normal 13px',
+            //                    text: '中    保    研    ·    汇    总 \n ——————————\nzhongbaoyan.github.io'
+            //                }
+            //            }
+            //        ]
+            //    }
+            //]
         };
         echart.setOption(option);
     }
@@ -1935,6 +1943,113 @@
         if (o.checked) initDataTopWeight();
         else initDataTop();
     }
+
+    function getVideoLinkById(id) {
+        let prefix = "https://www.bilibili.com/video/";
+        switch (id) {
+            case 4:
+                return prefix + "";
+            case 7:
+                return prefix + "";
+            case 8:
+                return prefix + "";
+            case 9:
+                return prefix + "";
+            case 12:
+                return prefix + "";
+            case 14:
+                return prefix + "";
+            case 15:
+                return prefix + "";
+            case 16:
+                return prefix + "";
+            case 17:
+                return prefix + "";
+            case 18:
+                return prefix + "";
+            case 19:
+                return prefix + "";
+            case 20:
+                return prefix + "";
+            case 21:
+                return prefix + "";
+            case 22:
+                return prefix + "";
+            case 23:
+                return prefix + "";
+            case 24:
+                return prefix + "";
+            case 25:
+                return prefix + "";
+            case 26:
+                return prefix + "";
+            case 27:
+                return prefix + "";
+            case 28:
+                return prefix + "";
+            case 29:
+                return prefix + "";
+            case 30:
+                return prefix + "";
+            case 31:
+                return prefix + "";
+            case 32:
+                return prefix + "";
+            case 33:
+                return prefix + "";
+            case 34:
+                return prefix + "";
+            case 35:
+                return prefix + "";
+            case 36:
+                return prefix + "";
+            case 37:
+                return prefix + "";
+            case 38:
+                return prefix + "";
+            case 39:
+                return prefix + "";
+            case 40:
+                return prefix + "";
+            case 41:
+                return prefix + "";
+            case 42:
+                return prefix + "";
+            case 43:
+                return prefix + "";
+            case 44:
+                return prefix + "";
+            case 45:
+                return prefix + "";
+            case 46:
+                return prefix + "";
+            case 47:
+                return prefix + "";
+            case 48:
+                return prefix + "";
+            case 49:
+                return prefix + "";
+            case 50:
+                return prefix + "";
+            case 51:
+                return prefix + "";
+            case 52:
+                return prefix + "";
+            case 53:
+                return prefix + "";
+            case 54:
+                return prefix + "";
+            case 55:
+                return prefix + "";
+            case 56:
+                return prefix + "";
+            case 57:
+                return prefix + "";
+            default:
+                return "https://space.bilibili.com/33849760";
+        }
+    }
+
 </script>
 <script src="js/html2canvas.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="js/canvas2image.js" type="text/javascript" charset="utf-8" async defer></script>

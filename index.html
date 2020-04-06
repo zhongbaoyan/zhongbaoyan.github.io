@@ -1212,6 +1212,117 @@
         else return getCarSafeDescriptionByWord('D');
     }
 
+    function getVideoLinkById(id) {
+        let prefix = "https://www.bilibili.com/video/";
+        switch (id) {
+            // ***** ***** ***** ***** ***** 2018A ***** ***** ***** ***** *****
+            case '4': //  宝马318i 2018款
+                return prefix + "";
+            case '7': // 诺科雷傲 2018款
+                return prefix + "";
+            case '8': // 本田雅阁 2018款
+                return prefix + "";
+            case '9': // 别克昂科威 2018款
+                return prefix + "";
+            case '12': // 大众途观L 2018款
+                return prefix + "";
+            case '14': // 大众迈腾 2018款
+                return prefix + "";
+            case '15': // 丰田凯美瑞
+                return prefix + "";
+            case '16': // 领克01
+                return prefix + "";
+            case '17': // 宝骏510
+                return prefix + "";
+            case '18': // WEY VV5
+                return prefix + "";
+            case '19': // 本田思域 2016款
+                return prefix + "";
+            case '20': // 奔驰C200 2018款
+                return prefix + "";
+            // ***** ***** ***** ***** ***** 2018B ***** ***** ***** ***** *****
+            case '21': // 奇瑞艾瑞泽5 2018款
+                return prefix + "";
+            case '22': // 现代领动 2018款
+                return prefix + "";
+            case '23': // 传祺GS7
+                return prefix + "";
+            case '24': // 起亚智跑
+                return prefix + "";
+            case '25': // 斯柯达柯迪亚克 2018款
+                return prefix + "";
+            case '26': // 丰田奕泽
+                return prefix + "";
+            case '27': // 众泰T600
+                return prefix + "";
+            case '28': // 江淮瑞丰S3 2018款
+                return prefix + "";
+            case '29': // 别克GL8 2017款
+                return prefix + "";
+            case '30': // 比亚迪宋MAX
+                return prefix + "";
+            case '31': // 日产西玛
+                return prefix + "";
+            // ***** ***** ***** ***** ***** 2019A ***** ***** ***** ***** *****
+            case '32': // 本田凌派 2019款
+                return prefix + "";
+            case '33': // 凯迪拉克XT4
+                return prefix + "";
+            case '34': // 三菱欧蓝德 2019款
+                return prefix + "BV1sg4y187du";
+            case '35': // 东风风神AX7 2019款
+                return prefix + "BV1yK4y1r7vE";
+            case '36': // 现代菲斯塔 2019款
+                return prefix + "";
+            case '37': // 哈弗F5
+                return prefix + "";
+            case '38': // 北汽绅宝D50
+                return prefix + "BV1kC4y1s7eU";
+            case '39': // 日产天籁 2019款
+                return prefix + "BV1yK411L7CP";
+            case '40': // 沃尔沃XC60
+                return prefix + "BV1At4y127y7";
+            case '41': // 比亚迪唐
+                return prefix + "";
+            case '42': // 福特福克斯
+                return prefix + "BV1J5411t7ZG";
+            case '43': // 丰田雷凌 2019款
+                return prefix + "BV1HV411o7YN";
+            case '44': // 丰田亚洲龙
+                return prefix + "BV19p4y1C7Wt";
+            case '45': // 吉利星越 2019款
+                return prefix + "BV1yc411h7f1";
+            // ***** ***** ***** ***** ***** 2019B ***** ***** ***** ***** *****
+            case '46': // 雪佛兰科鲁泽
+                return prefix + "BV1964y1u7wU";
+            case '47': // 奔腾T77
+                return prefix + "BV1f64y1u7x6";
+            case '48': // 宝马325Li M 2020款
+                return prefix + "BV1Mt4y1U7Rv";
+            case '49': // 大众帕萨特 2019款
+                return prefix + "BV1iK411L7wb";
+            case '50': // Jeep 大指挥官 2018款
+                return prefix + "BV19z411b7B1";
+            case '51': // 荣威RX5 MAX
+                return prefix + "BV1Bt4y1U7wj";
+            case '52': // 小鹏G3
+                return prefix + "BV1sZ4y1x727";
+            case '53': // 丰田卡罗拉
+                return prefix + "BV1Mi4y187fj";
+            case '54': // 长安CS75Plus
+                return prefix + "";
+            case '55': // 本田INSPIRE
+                return prefix + "";
+            case '56': // 奔驰GLC260L
+                return prefix + "BV1f541147Rz";
+            case '57': // 马自达3
+                return prefix + "";
+            // ***** ***** ***** ***** ***** 2020A ***** ***** ***** ***** *****
+            default:
+                return "https://space.bilibili.com/33849760";
+        }
+    }
+
     function getExplorer() {
         let explorer = window.navigator.userAgent,
             compare = function (s) {
@@ -1282,7 +1393,7 @@
             },
             "link": function (column, row) {
                 if (row.link) {
-                    return "<a title='" + row.model + "' id='btn" + row.link + "' class='btn-view-image'>"
+                    return "<a title='" + row.model + "图片' id='btn" + row.link + "' class='btn-view-image'>"
                         + "<i class='btn-detail-link-s zmdi zmdi-image-o'></i>"
                         + "</a>"
                         + "<span class='line-vertical'>|</span>"
@@ -1292,7 +1403,7 @@
                         //+ "</a>"
                         //+ "<span class='line-vertical'>|</span>"
                         //+ "<a target='_blank' title='" + row.model
-                        //+ "' href='" + getVideoLinkById(row.link) + "'>"
+                        //+ "视频' href='" + getVideoLinkById(row.link) + "'>"
                         //+ "<i class='btn-detail-link zmdi zmdi-videocam'></i>"
                         + "</a>";
                 } else return "<i class='btn-detail-nolink zmdi zmdi-more'></i>";
@@ -1942,112 +2053,6 @@
     function changeTop(o) {
         if (o.checked) initDataTopWeight();
         else initDataTop();
-    }
-
-    function getVideoLinkById(id) {
-        let prefix = "https://www.bilibili.com/video/";
-        switch (id) {
-            case 4:
-                return prefix + "";
-            case 7:
-                return prefix + "";
-            case 8:
-                return prefix + "";
-            case 9:
-                return prefix + "";
-            case 12:
-                return prefix + "";
-            case 14:
-                return prefix + "";
-            case 15:
-                return prefix + "";
-            case 16:
-                return prefix + "";
-            case 17:
-                return prefix + "";
-            case 18:
-                return prefix + "";
-            case 19:
-                return prefix + "";
-            case 20:
-                return prefix + "";
-            case 21:
-                return prefix + "";
-            case 22:
-                return prefix + "";
-            case 23:
-                return prefix + "";
-            case 24:
-                return prefix + "";
-            case 25:
-                return prefix + "";
-            case 26:
-                return prefix + "";
-            case 27:
-                return prefix + "";
-            case 28:
-                return prefix + "";
-            case 29:
-                return prefix + "";
-            case 30:
-                return prefix + "";
-            case 31:
-                return prefix + "";
-            case 32:
-                return prefix + "";
-            case 33:
-                return prefix + "";
-            case 34:
-                return prefix + "";
-            case 35:
-                return prefix + "";
-            case 36:
-                return prefix + "";
-            case 37:
-                return prefix + "";
-            case 38:
-                return prefix + "";
-            case 39:
-                return prefix + "";
-            case 40:
-                return prefix + "";
-            case 41:
-                return prefix + "";
-            case 42:
-                return prefix + "";
-            case 43:
-                return prefix + "";
-            case 44:
-                return prefix + "";
-            case 45:
-                return prefix + "";
-            case 46:
-                return prefix + "";
-            case 47:
-                return prefix + "";
-            case 48:
-                return prefix + "";
-            case 49:
-                return prefix + "";
-            case 50:
-                return prefix + "";
-            case 51:
-                return prefix + "";
-            case 52:
-                return prefix + "";
-            case 53:
-                return prefix + "";
-            case 54:
-                return prefix + "";
-            case 55:
-                return prefix + "";
-            case 56:
-                return prefix + "";
-            case 57:
-                return prefix + "";
-            default:
-                return "https://space.bilibili.com/33849760";
-        }
     }
 
 </script>

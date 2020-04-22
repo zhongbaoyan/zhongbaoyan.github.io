@@ -24,7 +24,7 @@
         .car-logo {
             width: 24px;
             height: 16px;
-            margin-right: 15px;
+            margin-right: 10px;
         }
 
         .grade {
@@ -126,12 +126,14 @@
 
         .car-year {
             font-size: x-small;
-        }
-
-        .car-price {
             color: #AAAAAA;
         }
 
+        .car-price {
+            font-size: xx-small;
+            color: #CCCCCC;
+            float: right;
+        }
 
         .watermark {
             width: 100%;
@@ -195,12 +197,14 @@
 </head>
 
 <body>
-<section id="main" style="margin:auto;padding:0;width: 970px;">
+
+<section id="main" style="margin:auto;padding:0;width: 980px;">
     <section id="content">
         <ul id="menu" class="mfb-component--br mfb-slidein-spring" data-mfb-toggle="hover"></ul>
         <div class="card" style="margin-top: 10px">
             <div id="card_body" class="card__body main-frame">
                 <div class="table-responsive">
+
                     <table id="list-car" class="table table-striped table--vmiddle"
                            style="font-family: 'Microsoft YaHei', sans-serif">
                         <thead>
@@ -215,7 +219,7 @@
                             <th data-column-id="seat" data-formatter="seat">座椅头枕</th>
                             <th data-column-id="assist" data-formatter="assist">辅助安全</th>
                             <th data-column-id="XR" data-formatter="XR">行人保护</th>
-                            <th data-column-id="fix" data-formatter="fix">耐撞维修</th>
+                            <th data-column-id="fix" data-formatter="fix">维修经济</th>
                             <th data-column-id="price" data-formatter="price">价格</th>
                             <th data-visible="false">测试批次</th>
                             <th data-column-id="link" data-formatter="link" data-sortable="false">详情</th>
@@ -495,7 +499,7 @@
                             <td>42</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>上汽凯迪拉克</td><!-- Make -->
+                            <td>上汽通用凯迪拉克</td><!-- Make -->
                             <td>XT4</td><!-- Model -->
                             <td>2018</td><!-- Year -->
                             <td>06</td><!-- 0 -->
@@ -511,7 +515,7 @@
                             <td>33</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>广汽菲克吉普</td><!-- Make -->
+                            <td>广汽菲克Jeep</td><!-- Make -->
                             <td>大指挥官</td><!-- Model -->
                             <td>2018</td><!-- Year -->
                             <td>08</td><!-- 0 -->
@@ -559,7 +563,7 @@
                             <td>8</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>上汽雪佛兰</td><!-- Make -->
+                            <td>上汽通用雪佛兰</td><!-- Make -->
                             <td>科鲁泽</td><!-- Model -->
                             <td>2019</td><!-- Year -->
                             <td>04</td><!-- 0 -->
@@ -666,7 +670,7 @@
                             <td>-</td><!-- Assist -->
                             <td>A</td><!-- XR -->
                             <td>D</td><!-- Fix -->
-                            <td>10.8</td><!-- Price -->
+                            <td>10.80</td><!-- Price -->
                             <td>19A</td><!-- PC -->
                             <td>37</td><!-- ID -->
                         </tr>
@@ -719,7 +723,7 @@
                             <td>31</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>上汽别克</td><!-- Make -->
+                            <td>上汽通用别克</td><!-- Make -->
                             <td>昂科威</td><!-- Model -->
                             <td>2018</td><!-- Year -->
                             <td>12</td><!-- 0 -->
@@ -975,7 +979,7 @@
                             <td>49</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>上汽别克</td><!-- Make -->
+                            <td>上汽通用别克</td><!-- Make -->
                             <td>GL8</td><!-- Model -->
                             <td>2017</td><!-- Year -->
                             <td>24</td><!-- 4 -->
@@ -991,8 +995,8 @@
                             <td>29</td><!-- ID -->
                         </tr>
                         <tr>
-                            <td>上汽五菱宝骏</td><!-- Make -->
-                            <td>510</td><!-- Model -->
+                            <td>上汽通用五菱</td><!-- Make -->
+                            <td>宝骏510</td><!-- Model -->
                             <td>2017</td><!-- Year -->
                             <td>22</td><!-- 6 -->
                             <td>T</td><!-- FR -->
@@ -1018,7 +1022,7 @@
                             <td>-</td><!-- Assist -->
                             <td>A</td><!-- XR -->
                             <td>D</td><!-- Fix -->
-                            <td>9.99</td><!-- Price -->
+                            <td> 9.99</td><!-- Price -->
                             <td>18B</td><!-- PC -->
                             <td>30</td><!-- ID -->
                         </tr>
@@ -1084,7 +1088,8 @@
                             <th data-visible="false">座椅头枕</th>
                             <th data-visible="false">辅助安全</th>
                             <th data-visible="false">行人保护</th>
-                            <th data-visible="false">耐撞维修</th>
+                            <th data-visible="false">维修经济</th>
+                            <th data-visible="false">价格</th>
                             <th data-column-id="time" data-formatter="time">测试批次</th>
                             <th data-visible="false">图片</th>
                         </tr>
@@ -1230,7 +1235,7 @@
 
 <script>
     function getCarSafeDescriptionByWord(word) {
-        let SNO = false; // SHOW_NON_OFFICIAL
+        let SNO = true; // SHOW_NON_OFFICIAL
         switch (word) {
             case 'A':
                 return "<span class=\"grade green-bg\">G 优秀</span>";
@@ -1285,216 +1290,164 @@
         switch (id) {
             // ***** ***** ***** ***** ***** 2018A ***** ***** ***** ***** *****
             case '4': //  宝马318i 2018款
-                url = "#";
-                target = "_self";
+                url = prefix + "BV1hA411b7a6";
                 break;
             case '7': // 诺科雷傲 2018款
-                url = "#";
-                target = "_self";
+                url = prefix + "BV11e411W7ut";
                 break;
             case '8': // 本田雅阁 2018款
-                url = "#";
-                target = "_self";
+                url = prefix + "BV1bK4y1k75B";
                 break;
             case '9': // 别克昂科威 2018款
-                url = "#";
-                target = "_self";
+                url = prefix + "BV19e411W75h";
                 break;
             case '12': // 大众途观L 2018款
-                url = "#";
-                target = "_self";
+                url = prefix + "BV1Ve411s7vZ";
                 break;
             case '14': // 大众迈腾 2018款
                 url = "#";
-                target = "_self";
                 break;
             case '15': // 丰田凯美瑞
                 url = "#";
-                target = "_self";
                 break;
             case '16': // 领克01
                 url = "#";
-                target = "_self";
                 break;
             case '17': // 宝骏510
                 url = "#";
-                target = "_self";
                 break;
             case '18': // WEY VV5
                 url = "#";
-                target = "_self";
                 break;
             case '19': // 本田思域 2016款
                 url = "#";
-                target = "_self";
                 break;
             case '20': // 奔驰C200 2018款
                 url = "#";
-                target = "_self";
                 break;
             // ***** ***** ***** ***** ***** 2018B ***** ***** ***** ***** *****
             case '21': // 奇瑞艾瑞泽5 2018款
                 url = "#";
-                target = "_self";
                 break;
             case '22': // 现代领动 2018款
                 url = "#";
-                target = "_self";
                 break;
             case '23': // 传祺GS7
                 url = "#";
-                target = "_self";
                 break;
             case '24': // 起亚智跑
                 url = "#";
-                target = "_self";
                 break;
             case '25': // 斯柯达柯迪亚克 2018款
                 url = "#";
-                target = "_self";
                 break;
             case '26': // 丰田奕泽
                 url = "#";
-                target = "_self";
                 break;
             case '27': // 众泰T600
                 url = "#";
-                target = "_self";
                 break;
             case '28': // 江淮瑞丰S3 2018款
                 url = "#";
-                target = "_self";
                 break;
             case '29': // 别克GL8 2017款
                 url = "#";
-                target = "_self";
                 break;
             case '30': // 比亚迪宋MAX
                 url = "#";
-                target = "_self";
                 break;
             case '31': // 日产西玛
                 url = "#";
-                target = "_self";
                 break;
             // ***** ***** ***** ***** ***** 2019A ***** ***** ***** ***** *****
             case '32': // 本田凌派 2019款
                 url = prefix + "BV1e7411q7jn";
-                target = "_blank";
                 break;
             case '33': // 凯迪拉克XT4
                 url = prefix + "BV12J411n7BC";
-                target = "_blank";
                 break;
             case '34': // 三菱欧蓝德 2019款
                 url = prefix + "BV17J411V7uy";
-                target = "_blank";
                 break;
             case '35': // 东风风神AX7 2019款
                 url = prefix + "BV18J411G7Bp";
-                target = "_blank";
                 break;
             case '36': // 现代菲斯塔 2019款
                 url = prefix + "BV15J41157qC";
-                target = "_blank";
                 break;
             case '37': // 哈弗F5
                 url = prefix + "BV1vJ411j7q2";
-                target = "_blank";
                 break;
             case '38': // 北汽绅宝D50
                 url = prefix + "BV1jJ411L7n5";
-                target = "_blank";
                 break;
             case '39': // 日产天籁 2019款
                 url = prefix + "BV1pJ41187P9";
-                target = "_blank";
                 break;
             case '40': // 沃尔沃XC60
                 url = prefix + "BV1PJ411h7ob";
-                target = "_blank";
                 break;
             case '41': // 比亚迪唐
                 url = prefix + "BV1GJ411Y7cB";
-                target = "_blank";
                 break;
             case '42': // 福特福克斯
                 url = prefix + "BV1uJ411e7Z5";
-                target = "_blank";
                 break;
             case '43': // 丰田雷凌 2019款
                 url = prefix + "BV1rJ411Y7di";
-                target = "_blank";
                 break;
             case '44': // 丰田亚洲龙
                 url = prefix + "BV1eJ411Y7xS";
-                target = "_blank";
                 break;
             case '45': // 吉利星越 2019款
                 url = prefix + "BV1KJ411s7h7";
-                target = "_blank";
                 break;
             // ***** ***** ***** ***** ***** 2019B ***** ***** ***** ***** *****
             case '46': // 雪佛兰科鲁泽
                 url = prefix + "BV13J411W727";
-                target = "_blank";
                 break;
             case '47': // 奔腾T77
                 url = prefix + "BV1GJ411W73G";
-                target = "_blank";
                 break;
 
             case '48': // 宝马325Li M 2020款
                 url = prefix + "BV1GJ411W7gQ";
-                target = "_blank";
                 break;
             case '49': // 大众帕萨特 2019款
                 url = prefix + "BV1QJ411p7b9";
-                target = "_blank";
                 break;
             case '50': // Jeep 大指挥官 2018款
                 url = prefix + "BV1jJ411h72s";
-                target = "_blank";
                 break;
             case '51': // 荣威RX5 MAX
                 url = prefix + "BV1yJ41157vb";
-                target = "_blank";
                 break;
             case '52': // 小鹏G3
                 url = prefix + "BV1KJ411J7uc";
-                target = "_blank";
                 break;
             case '53': // 丰田卡罗拉
                 url = prefix + "BV1C7411v7tC";
-                target = "_blank";
                 break;
             case '54': // 长安CS75Plus
                 url = prefix + "BV1d741177So";
-                target = "_blank";
                 break;
             case '55': // 本田INSPIRE
                 url = prefix + "BV1uE411475i";
-                target = "_blank";
                 break;
             case '56': // 奔驰GLC260L
                 url = prefix + "BV1WE411G7fz";
-                target = "_blank";
                 break;
             case '57': // 马自达3
                 url = prefix + "BV1a7411d7Bd";
-                target = "_blank";
                 break;
             case '58': // 奥迪A6L
                 url = prefix + "BV1sQ4y1K79T";
-                target = "_blank";
                 break;
             // ***** ***** ***** ***** ***** 2020A ***** ***** ***** ***** *****
             default:
                 url = "#";
-                target = "_self";
                 break;
         }
-
         if (url.indexOf("#") >= 0) {
             return "<i title='暂无' class='btn-detail-link zmdi zmdi-videocam-off no-video'></i>"
         } else {
@@ -1536,21 +1489,21 @@
             actionDropDown: "<span class=\"{{css.dropDownMenu}}\">" + "<a href='' data-toggle=\"dropdown\">{{ctx.content}}</a><ul class=\"{{css.dropDownMenuItems}}\" role=\"menu\"></ul></span>",
             search: "<div class=\"{{css.search}} form-group\"><span class=\"{{css.icon}} {{css.iconSearch}}\"></span><input type=\"text\" class=\"{{css.searchField}}\" placeholder=\"{{lbl.search}}\" /><i class='form-group__bar'></i></div>",
             header: "<div id='{{ctx.id}}' class='main-header'  >" +
-            "<br>" +
-            "<span class='main-title' >中保研碰撞测试汇总</span>" +
-            "<p class='{{css.search}}'></p>" +
+                "<br>" +
+                "<span class='main-title' >中保研碰撞测试汇总</span>" +
+                "<p class='{{css.search}}'></p>" +
 
-            "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.04.10</span>" +
-            "<span id='btnSaveImage' class='btn-save-image' title='保存图片'><i class='zmdi zmdi-download'></i></span>" +
-            //"<p class=\"{{css.actions}}\"></p>" +
-            //"<br>" +
-            "</div>",
+                "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.04.10</span>" +
+                "<span id='btnSaveImage' class='btn-save-image' title='保存图片'><i class='zmdi zmdi-download'></i></span>" +
+                //"<p class=\"{{css.actions}}\"></p>" +
+                //"<br>" +
+                "</div>",
             actionDropDownCheckboxItem: "<li><div class='tabe-bootgrid__checkbox checkbox checkbox--dark'><label class=\"{{css.dropDownItem}}\"><input name=\"{{ctx.name}}\" type=\"checkbox\" value=\"1\" class=\"{{css.dropDownItemCheckbox}}\" {{ctx.checked}} /> {{ctx.label}}<i class='input-helper'></i></label></div></li>",
             footer: "<div id='watermark' align='center' class='watermark' style='display: none'>" +
-            "<span class='line-left'></span>" +
-            "<span class='text'>zhongbaoyan.github.io</span>" +
-            "<span class='line-right'></span>" +
-            "</div>"
+                "<span class='line-left'></span>" +
+                "<span class='text'>zhongbaoyan.github.io</span>" +
+                "<span class='line-right'></span>" +
+                "</div>"
         },
         formatters: {
             "model": function (column, row) {
@@ -1581,7 +1534,7 @@
                 return "<a title='行人保护'>" + getCarSafeDescriptionByWord(row.XR) + "</a>";
             },
             "fix": function (column, row) {
-                return "<a title='耐撞维修'>" + getCarSafeDescriptionByWord(row.fix) + "</a>";
+                return "<a title='维修经济'>" + getCarSafeDescriptionByWord(row.fix) + "</a>";
             },
             "price": function (column, row) {
                 return "<span class='car-price' title='万元'>" + row.price + "</span>";
@@ -1601,7 +1554,8 @@
                 } else return "<i class='btn-detail-nolink zmdi zmdi-more'></i>";
             },
             "make": function (column, row) {
-                return getLogoByMake(row.make, 0, 0) + "<span class='car-make'>" + row.make + "</span>"/* + getCountryByMake(row.make) */;
+                return getLogoByMake(row.make + row.model, 0, 0)
+                    + "<span class='car-make'>" + row.make + "</span>";
             }
         }
     });

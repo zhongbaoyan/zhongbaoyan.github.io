@@ -43,11 +43,7 @@ function insertShareButton() {
  */
 function insertFooter() {
     document.getElementById("footer").innerHTML = "&copy; <span id='footer-copyright'></span> zhoumushui<ul class='footer__menu'><li><div class='sucaihuo-container'><section class='cd-section toolbox-link'>" +
-        /*
-        "<a class=\"cd-bouncy-nav-trigger\" href=\"#0\">工具箱</a>" +
-        "</section>" +
-         */
-        "<div class='cd-bouncy-nav-modal'><nav><ul class=\"cd-bouncy-nav\"><li><a target='_blank' href='" + path + "link'>导航</a></li><li><a target='_blank' href='" + path + "pass.html'>密码</a></li><li><a target='_blank' href='" + path + "game'>游戏</a></li><li><a target='_blank' href='" + path + "file'>文件</a></li><li><a target='_blank' href='" + path + "module/colorpicker'>颜色</a></li><li><a target='_blank' href='" + path + "module/icon'>图标</a></li></ul></nav><a href='#0' class='cd-close'>Close</a></div></div></li><!--<li><a href=\"" + path + "comment\">留言板</a></li>--><span id='busuanzi_container_site_pv'>PV: <span id='busuanzi_value_site_pv'></span></span><span id='busuanzi_container_site_uv'> | UV: <span id='busuanzi_value_site_uv'></span></span></ul>"
+    "<span id='busuanzi_container_site_pv'>PV: <span id='busuanzi_value_site_pv'></span></span><span id='busuanzi_container_site_uv'> | UV: <span id='busuanzi_value_site_uv'></span></span></ul>"
 }
 
 function setCopyRightYear() {

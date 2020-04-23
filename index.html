@@ -1285,9 +1285,9 @@
     function getVideoLinkById(id, model) {
         let url = "";
         let prefix = "https://www.bilibili.com/video/";
-        let target = "_self"; //"_blank";
+        let target = "_self";
         switch (id) {
-            // ***** ***** ***** ***** ***** 2018A ***** ***** ***** ***** *****
+            // ***** ***** ***** 2018A ***** ***** *****
             case '4': //  宝马318i 2018款
                 url = prefix + "BV1hA411b7a6";
                 break;
@@ -1304,7 +1304,7 @@
                 url = prefix + "BV1Ve411s7vZ";
                 break;
             case '14': // 大众迈腾 2018款
-                url = "#";
+                url = prefix + "BV1mp4y1X7Wh";
                 break;
             case '15': // 丰田凯美瑞
                 url = "#";
@@ -1324,7 +1324,7 @@
             case '20': // 奔驰C200 2018款
                 url = "#";
                 break;
-            // ***** ***** ***** ***** ***** 2018B ***** ***** ***** ***** *****
+            // ***** ***** ***** 2018B ***** ***** *****
             case '21': // 奇瑞艾瑞泽5 2018款
                 url = "#";
                 break;
@@ -1358,7 +1358,7 @@
             case '31': // 日产西玛
                 url = "#";
                 break;
-            // ***** ***** ***** ***** ***** 2019A ***** ***** ***** ***** *****
+            // ***** ***** ***** 2019A ***** ***** *****
             case '32': // 本田凌派 2019款
                 url = prefix + "BV1e7411q7jn";
                 break;
@@ -1401,14 +1401,13 @@
             case '45': // 吉利星越 2019款
                 url = prefix + "BV1KJ411s7h7";
                 break;
-            // ***** ***** ***** ***** ***** 2019B ***** ***** ***** ***** *****
+            // ***** ***** ***** 2019B ***** ***** *****
             case '46': // 雪佛兰科鲁泽
                 url = prefix + "BV13J411W727";
                 break;
             case '47': // 奔腾T77
                 url = prefix + "BV1GJ411W73G";
                 break;
-
             case '48': // 宝马325Li M 2020款
                 url = prefix + "BV1GJ411W7gQ";
                 break;
@@ -1442,7 +1441,7 @@
             case '58': // 奥迪A6L
                 url = prefix + "BV1sQ4y1K79T";
                 break;
-            // ***** ***** ***** ***** ***** 2020A ***** ***** ***** ***** *****
+            // ***** ***** ***** 2020A ***** ***** *****
             default:
                 url = "#";
                 break;
@@ -1683,7 +1682,6 @@
         }
         buildChart('detailFront', "正面主驾25%偏置碰撞", "（分数越低越好）", legendData, arrayCar, seriesValue);
     }
-
 
     function initDataFrontPeopleHarm() {
         let legendData = ['正面主驾25%偏置 - 假人伤害'];
@@ -2182,7 +2180,6 @@
         initDataFront();
         initDataSide();
         initDataTop();
-        //initDataRoadUser();
     }
 
     function changeFront(o) {
@@ -2199,7 +2196,6 @@
         if (o.checked) initDataTopWeight();
         else initDataTop();
     }
-
 </script>
 <script src="js/html2canvas.min.js" type="text/javascript" charset="utf-8" async defer></script>
 <script src="js/canvas2image.js" type="text/javascript" charset="utf-8" async defer></script>

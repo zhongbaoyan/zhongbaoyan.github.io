@@ -113,7 +113,7 @@
 
         .score-detail {
             width: 100%;
-            height: 915px;
+            height: 930px;
         }
 
         .car-make {
@@ -448,6 +448,22 @@
                             <td>12.49</td><!-- Price -->
                             <td>19B</td><!-- PC -->
                             <td>54</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>上汽通用别克</td><!-- Make -->
+                            <td>君威</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>02</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>06</td><!-- CM -->
+                            <td>4.63</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>18.28</td><!-- Price -->
+                            <td>20A</td><!-- PC -->
+                            <td>59</td><!-- ID -->
                         </tr>
                         <tr>
                             <td>比亚迪</td><!-- Make -->
@@ -1108,22 +1124,6 @@
                             <td>T</td><!-- Fix -->
                             <td></td><!-- Price -->
                             <td>19B</td><!-- PC -->
-                            <td>59</td><!-- ID -->
-                        </tr>
-                        <tr>
-                            <td>上汽通用别克</td><!-- Make -->
-                            <td>君威</td><!-- Model -->
-                            <td>2019</td><!-- Year -->
-                            <td>T</td><!-- FL -->
-                            <td>T</td><!-- FR -->
-                            <td>T</td><!-- CM -->
-                            <td>T</td><!-- Top -->
-                            <td>T</td><!-- Seat -->
-                            <td>T</td><!-- Assist -->
-                            <td>T</td><!-- XR -->
-                            <td>T</td><!-- Fix -->
-                            <td></td><!-- Price -->
-                            <td>20A</td><!-- PC -->
                             <td></td><!-- ID -->
                         </tr>
                         <tr>
@@ -1421,7 +1421,7 @@
                 url = prefix + "BV18f4y1U7VB";
                 break;
             case '26': // 丰田奕泽
-                url = "#";
+                url = prefix + "BV1qk4y1k7cP";
                 break;
             case '27': // 众泰T600
                 url = "#";
@@ -1522,6 +1522,9 @@
                 url = prefix + "BV1sQ4y1K79T";
                 break;
             // ***** ***** ***** 2020A ***** ***** *****
+            case '59': // 别克君威
+                url = prefix + "BV1hK411W73s";
+                break;
             default:
                 url = "#";
                 break;
@@ -1571,7 +1574,7 @@
                 "<span class='main-title' >中保研碰撞测试汇总</span>" +
                 "<p class='{{css.search}}'></p>" +
 
-                "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.05.14</span>" +
+                "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.05.20</span>" +
                 "<span id='btnSaveImage' class='btn-save-image' title='保存图片'><i class='zmdi zmdi-download'></i></span>" +
                 //"<p class=\"{{css.actions}}\"></p>" +
                 //"<br>" +
@@ -1727,6 +1730,7 @@
         addData('雪佛兰科鲁泽', 4);
         addData('现代领动', 2);
         addData('魏派VV5', 2);
+        addData('别克君威', 2);
         addData('比亚迪唐', 2);
         addData('长安CS75Plus', 2);
         addData('领克01', 2);
@@ -1810,6 +1814,7 @@
         addData('吉普大指挥官', 0);
         addData('凯迪拉克XT4', 0);
         addData('魏派VV5', 0);
+        addData('别克君威', 0);
         addData('比亚迪唐', 0);
         addData('长安CS75Plus', 0);
         addData('领克01', 0);
@@ -1887,6 +1892,7 @@
         addData('大众途观L', 8); // 18.0
         addData('比亚迪唐', 8); // 21.5
         addData('雷诺科雷傲', 6); //  4.5
+        addData('别克君威', 6);  // 7.5
         addData('日产天籁', 6); // 10.5
         addData('吉利星越', 6); // 17.0
         addData('福特福克斯', 4); // 21.0
@@ -1947,6 +1953,7 @@
         addData('雷诺科雷傲', 4.5);
         addData('日产西玛', 5.5);
         addData('绅宝D50', 6.0);
+        addData('别克君威', 7.5);
         addData('本田思域', 8.0);
         addData('别克GL8', 8.0);
         addData('三菱欧蓝德', 9.0);
@@ -2052,6 +2059,7 @@
         addData('奇瑞艾瑞泽5', 4.53);
         addData('斯柯达柯迪亚克', 4.55);
         addData('凯迪拉克XT4', 4.59);
+        addData('别克君威', 4.63);
         addData('日产天籁', 4.73);
         addData('宝马318i', 4.89);
         addData('沃尔沃XC60', 5.06);
@@ -2128,6 +2136,7 @@
         addData('比亚迪宋MAX', 63299);
         addData('传祺GS7', 63944);
         addData('本田思域', 64661);
+        addData('别克君威', 64869);
         addData('别克GL8', 65275);
         addData('别克昂科威', 67823);
         addData('大众途观L', 67876);
@@ -2234,7 +2243,7 @@
         20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-        50, 51, 52, 53, 54, 55, 56, 57, 58
+        50, 51, 52, 53, 54, 55, 56, 57, 58, 59
     ];
     let contentImgFrame = "";
     for (let i = 0; i < arrayId.length; i++) {

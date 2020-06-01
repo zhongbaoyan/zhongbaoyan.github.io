@@ -60,7 +60,7 @@ function GetQueryString(name) {
 
 insertFooter();
 setCopyRightYear();
-insertShareButton();
+//insertShareButton();
 //insertIEWarning();
 
 

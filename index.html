@@ -113,7 +113,7 @@
 
         .score-detail {
             width: 100%;
-            height: 930px;
+            height: 950px;
         }
 
         .car-make {
@@ -400,6 +400,22 @@
                             <td>18.68</td><!-- Price -->
                             <td>19A</td><!-- PC -->
                             <td>39</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>特斯拉</td><!-- Make -->
+                            <td>Model 3</td><!-- Model -->
+                            <td>2019</td><!-- Year -->
+                            <td>01</td><!-- FL -->
+                            <td>T</td><!-- FR -->
+                            <td>00</td><!-- CM -->
+                            <td>5.97</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>A</td><!-- Assist -->
+                            <td>B</td><!-- XR -->
+                            <td>C</td><!-- Fix -->
+                            <td>29.18</td><!-- Price -->
+                            <td>20A</td><!-- PC -->
+                            <td>60</td><!-- ID -->
                         </tr>
                         <tr>
                             <td>广汽丰田</td><!-- Make -->
@@ -1111,38 +1127,6 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>奇瑞</td><!-- Make -->
-                            <td>捷途X70</td><!-- Model -->
-                            <td>2020</td><!-- Year -->
-                            <td>T</td><!-- FL -->
-                            <td>T</td><!-- FR -->
-                            <td>T</td><!-- CM -->
-                            <td>T</td><!-- Top -->
-                            <td>T</td><!-- Seat -->
-                            <td>T</td><!-- Assist -->
-                            <td>T</td><!-- XR -->
-                            <td>T</td><!-- Fix -->
-                            <td></td><!-- Price -->
-                            <td>19B</td><!-- PC -->
-                            <td></td><!-- ID -->
-                        </tr>
-                        <tr>
-                            <td>特斯拉</td><!-- Make -->
-                            <td>Model 3</td><!-- Model -->
-                            <td></td><!-- Year -->
-                            <td>T</td><!-- FL -->
-                            <td>T</td><!-- FR -->
-                            <td>T</td><!-- CM -->
-                            <td>T</td><!-- Top -->
-                            <td>T</td><!-- Seat -->
-                            <td>T</td><!-- Assist -->
-                            <td>T</td><!-- XR -->
-                            <td>T</td><!-- Fix -->
-                            <td></td><!-- Price -->
-                            <td>20A</td><!-- PC -->
-                            <td></td><!-- ID -->
-                        </tr>
-                        <tr>
                             <td>长城哈弗</td><!-- Make -->
                             <td>H6</td><!-- Model -->
                             <td></td><!-- Year -->
@@ -1525,6 +1509,9 @@
             case '59': // 别克君威
                 url = prefix + "BV1hK411W73s";
                 break;
+            case '60': // 特斯拉Model 3
+                url = prefix + "BV1Ma4y1v7sn";
+                break;
             default:
                 url = "#";
                 break;
@@ -1574,7 +1561,7 @@
                 "<span class='main-title' >中保研碰撞测试汇总</span>" +
                 "<p class='{{css.search}}'></p>" +
 
-                "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.05.20</span>" +
+                "<span class='update-date'><i class='zmdi zmdi-time' ></i> 2020.06.10</span>" +
                 "<span id='btnSaveImage' class='btn-save-image' title='保存图片'><i class='zmdi zmdi-download'></i></span>" +
                 //"<p class=\"{{css.actions}}\"></p>" +
                 //"<br>" +
@@ -1735,6 +1722,7 @@
         addData('长安CS75Plus', 2);
         addData('领克01', 2);
         addData('丰田凯美瑞', 2);
+        addData('特斯拉Model 3', 1);
         addData('日产天籁', 0);
         addData('马自达3', 0);
         addData('沃尔沃XC60', 0);
@@ -1799,6 +1787,7 @@
         addData('本田思域', 1);
         addData('传祺GS7', 1);
         addData('福特福克斯', 1);
+        addData('特斯拉Model 3', 1);
         addData('日产西玛', 0);
         addData('大众迈腾', 0);
         addData('本田凌派', 0);
@@ -1911,6 +1900,7 @@
         addData('丰田雷凌', 0); // 17.5
         addData('凯迪拉克XT4', 0); // 18.5
         addData('荣威RX5 MAX', 0); // 20.5
+        addData('特斯拉Model 3', 0);  // 22.5
         addData('奔驰GLC260L', 0); // 23.0
         addData('沃尔沃XC60', 0); // 26.0
         addData('丰田奕泽', 0); // 31.5
@@ -1994,6 +1984,7 @@
         addData('荣威RX5 MAX', 20.5);
         addData('福特福克斯', 21.0);
         addData('比亚迪唐', 21.5);
+        addData('特斯拉Model 3', 22.5);
         addData('奔驰GLC260L', 23.0);
         addData('奔腾T77', 23.5);
         addData('沃尔沃XC60', 26.0);
@@ -2075,6 +2066,7 @@
         addData('丰田雷凌', 5.66);
         addData('奔腾T77', 5.74);
         addData('丰田奕泽', 5.75);
+        addData('特斯拉Model 3', 5.97);
         addData('丰田凯美瑞', 5.98);
         addData('丰田亚洲龙', 6.03);
         addData('丰田卡罗拉', 6.04);
@@ -2165,6 +2157,7 @@
         addData('沃尔沃XC60', 91677);
         addData('奥迪A6L', 92007);
         addData('丰田亚洲龙', 93385);
+        addData('特斯拉Model 3', 93797);
         addData('奔驰C200', 94379);
         addData('宝马325Li', 95952);
         addData('奔驰GLC260L', 122316);
@@ -2243,7 +2236,8 @@
         20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
-        50, 51, 52, 53, 54, 55, 56, 57, 58, 59
+        50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
+        60
     ];
     let contentImgFrame = "";
     for (let i = 0; i < arrayId.length; i++) {

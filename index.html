@@ -186,6 +186,10 @@
     </style>
 
     <script>
+        // Force redirect to faster gitee server
+        var url = location.href;
+        if(url.indexOf("github.io") >= 0) location.href = 'https://zhongbaoyan.gitee.io';
+
         var _hmt = _hmt || [];
         (function () {
             var hm = document.createElement("script");

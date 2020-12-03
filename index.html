@@ -113,7 +113,7 @@
 
         .score-detail {
             width: 100%;
-            height: 1030px;
+            height: 1050px;
         }
 
         .car-make {
@@ -496,6 +496,22 @@
                             <td>12.49</td><!-- Price -->
                             <td>19B</td><!-- PC -->
                             <td>54</td><!-- ID -->
+                        </tr>
+                        <tr>
+                            <td>长城哈弗</td><!-- Make -->
+                            <td>H6</td><!-- Model -->
+                            <td>2020</td><!-- Year -->
+                            <td>02</td><!-- 0 -->
+                            <td>T</td><!-- FR -->
+                            <td>02</td><!-- 16.0 -->
+                            <td>3.95</td><!-- Top -->
+                            <td>A</td><!-- Seat -->
+                            <td>-</td><!-- Assist -->
+                            <td>A</td><!-- XR -->
+                            <td>D</td><!-- Fix -->
+                            <td>11.10</td><!-- Price -->
+                            <td>20A</td><!-- PC -->
+                            <td>63</td><!-- ID -->
                         </tr>
                         <tr>
                             <td>比亚迪</td><!-- Make -->
@@ -1191,22 +1207,6 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>长城哈弗</td><!-- Make -->
-                            <td>H6</td><!-- Model -->
-                            <td></td><!-- Year -->
-                            <td>T</td><!-- FL -->
-                            <td>T</td><!-- FR -->
-                            <td>T</td><!-- CM -->
-                            <td>T</td><!-- Top -->
-                            <td>T</td><!-- Seat -->
-                            <td>T</td><!-- Assist -->
-                            <td>T</td><!-- XR -->
-                            <td>T</td><!-- Fix -->
-                            <td></td><!-- Price -->
-                            <td>20A</td><!-- PC -->
-                            <td></td><!-- ID -->
-                        </tr>
-                        <tr>
                             <td>一汽大众奥迪</td><!-- Make -->
                             <td>Q5L</td><!-- Model -->
                             <td>2020</td><!-- Year -->
@@ -1528,6 +1528,9 @@
             case '60': // 特斯拉Model 3
                 url = prefix + "BV17v41167oo"; // Official
                 break;
+            case '63': // 哈弗H6
+                url = "#";
+                break;
             // ***** ***** ***** 2020B ***** ***** *****
             case '64': // 本田皓影
                 url = "#";
@@ -1747,6 +1750,7 @@
         addData('三菱欧蓝德', 4);
         addData('雪佛兰科鲁泽', 4);
         addData('现代领动', 2);
+        addData('哈弗H6', 2);
         addData('魏派VV5', 2);
         addData('比亚迪唐', 2);
         addData('长安CS75Plus', 2);
@@ -1837,6 +1841,7 @@
         addData('别克君威', 0);
         addData('吉普大指挥官', 0);
         addData('凯迪拉克XT4', 0);
+        addData('哈弗H6', 0);
         addData('魏派VV5', 0);
         addData('比亚迪唐', 0);
         addData('长安CS75Plus', 0);
@@ -1923,6 +1928,7 @@
         addData('福特福克斯', 4); // 21.0
         addData('日产西玛', 2); //  5.5
         addData('马自达阿特兹', 2); // 14.5
+        addData('哈弗H6', 2); // 16.0
         addData('长安CS75Plus', 2); // 17.5
         addData('宝马318i', 2); // 18.5
         addData('领克03', 2); // 20.0
@@ -2005,6 +2011,7 @@
         addData('东风AX7', 15.0);
         addData('丰田凯美瑞', 15.5);
         addData('吉普大指挥官', 16.0);
+        addData('哈弗H6', 16.0);
         addData('领克01', 16.0);
         addData('奥迪A6L', 16.5);
         addData('丰田卡罗拉', 16.5);
@@ -2076,6 +2083,7 @@
         addData('众泰T600', 3.79);
         addData('比亚迪宋MAX', 3.85);
         addData('江淮瑞风S3', 3.90);
+        addData('哈弗H6', 3.95);
         addData('比亚迪唐', 4.04);
         addData('本田雅阁', 4.15);
         addData('本田INSPIRE', 4.16);
@@ -2169,6 +2177,7 @@
         addData('本田INSPIRE', 59418);
         addData('本田雅阁', 59598);
         addData('魏派VV5', 60085);
+        addData('哈弗H6', 62887);
         addData('比亚迪宋MAX', 63299);
         addData('传祺GS7', 63944);
         addData('本田思域', 64661);
@@ -2285,7 +2294,7 @@
         30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
         40, 41, 42, 43, 44, 45, 46, 47, 48, 49,
         50, 51, 52, 53, 54, 55, 56, 57, 58, 59,
-        60,          // 64, 65, 66, 67,
+        60,      // 63, 64, 65, 66, 67,
     ];
     let contentImgFrame = "";
     for (let i = 0; i < arrayId.length; i++) {

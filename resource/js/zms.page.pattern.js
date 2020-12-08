@@ -62,7 +62,3 @@ insertFooter();
 setCopyRightYear();
 //insertShareButton();
 //insertIEWarning();
-
-
-
-

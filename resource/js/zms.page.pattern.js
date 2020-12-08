@@ -33,7 +33,7 @@ function isEmpty(obj) {
 function insertShareButton() {
     let essayTitle = document.title;
     let essaySummary = document.title;
-    let essayUrl = window.location.href;//'http://www.zhoumushui.com/essay.html';
+    let essayUrl = window.location.href;
     let essayPic = 'http://www.zhoumushui.com/img/logo/1.jpg'; // This
     document.getElementById("menu").innerHTML = "<li class='mfb-component__wrap'><a class='mfb-component__button--main'><i class='mfb-component__main-icon--resting zmdi zmdi-share'></i><i class='mfb-component__main-icon--active zmdi zmdi-close'></i></a><ul class='mfb-component__list'><li><a data-mfb-label='分享到QQ空间' class='mfb-component__button--child' href='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url= " + essayUrl + "&title=" + essayTitle + "&pics=" + essayPic + "&summary=" + essaySummary + "' target='_blank'><i class='mfb-component__child-icon zmdi zmdi-star-circle'></i></a></li><li> <a data-mfb-label='分享到新浪微博' class='mfb-component__button--child' href='http://service.weibo.com/share/share.php?title= " + essayTitle + "&url=" + essayUrl + "' target='_blank'><i class='mfb-component__child-icon zmdi zmdi-eye'></i></a></li><li><a data-mfb-label='分享到豆瓣' class='mfb-component__button--child' href='https://www.douban.com/share/service?image= " + essayPic + "&href=" + essayUrl + "&name=" + essayTitle + "&text=" + essaySummary + "' target='_blank'><i class='mfb-component__child-icon zmdi zmdi-flower-alt'></i></a></li><li><a data-mfb-label='剪藏到印象笔记' class='mfb-component__button--child' href='https://app.yinxiang.com/clip.action?url=" + essayUrl + "&title=" + essayTitle + "' target='_blank\"><i class='mfb-component__child-icon zmdi zmdi-evernote'></i></a></li></ul></li>"
 }

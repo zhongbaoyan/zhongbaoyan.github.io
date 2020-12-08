@@ -19,6 +19,7 @@
     <link type="image/x-icon" href="resource/img/favicon.ico" rel="shortcut icon"/>
 
     <link href="resource/css/essay.material.floating.button.css" rel="stylesheet">
+    <link href="resource/css/ripple.float.button.css" rel="stylesheet">
     <link href="css/site.car.css" rel="stylesheet">
     <style>
         .car-logo {
@@ -187,7 +188,7 @@
 
     <script>
         // Force redirect to faster gitee server
-        if (location.href.indexOf("github.io") >= 0) location.href = 'https://zhongbaoyan.gitee.io';
+        // if (location.href.indexOf("github.io") >= 0) location.href = 'https://zhongbaoyan.gitee.io';
 
         var _hmt = _hmt || [];
         (function () {
@@ -1300,7 +1301,19 @@
     </div>
     <br>
     <div id="image-frame"></div>
+    <div class="livechat-girl animated"> <img class="girl" src="resource/img/logo/1.jpg">
+        <div class="livechat-hint rd-notice-tooltip rd-notice-type-success rd-notice-position-left single-line show_hint">
+          <div class="rd-notice-content">嘿，我来帮您！</div>
+        </div>
+        <div class="animated-circles">
+          <div class="circle c-1"></div>
+          <div class="circle c-2"></div>
+          <div class="circle c-3"></div>
+        </div>
+      </div>
+      
 </section>
+
 
 <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script><!-- jQuery -->
 <script type="text/javascript" src="resource/js/zms.goup.js"></script><!-- Go Up -->
@@ -1314,7 +1327,37 @@
 
 <script src="resource/js/data-table.js"></script>
 <script src="resource/js/app.min.js"></script>
-
+<script>
+(function($) {
+	setInterval(function(){
+		if($(".animated-circles").hasClass("animated")){
+			$(".animated-circles").removeClass("animated");
+		}else{
+			$(".animated-circles").addClass('animated');
+		}
+	},3000);
+	var wait = setInterval(function(){
+		$(".livechat-hint").removeClass("show_hint").addClass("hide_hint");
+		clearInterval(wait);
+	},4500);
+	$(".livechat-girl").hover(function(){
+		clearInterval(wait);
+		$(".livechat-hint").removeClass("hide_hint").addClass("show_hint");
+	},function(){
+		$(".livechat-hint").removeClass("show_hint").addClass("hide_hint");
+	}).click(function(){
+		if(isMobile){
+			 window.location.href = 'http://www.baidu.com';
+		}else{
+			var oWidth = 606,
+				oHeight = 630,
+				top = ($(window).height()/2)-(oHeight/2),
+				left = ($(window).width()/2)-(oWidth/2);
+			window.open('http://www.baidu.com','','width='+oWidth+',height='+oHeight+',scrollbars=yes,top='+top+',left='+left+',resizable=yes');
+		}
+	});
+})(jQuery);
+</script>
 <script>
     function getCarSafeDescriptionByWord(word) {
         let SNO = true; // SHOW_NON_OFFICIAL
@@ -1805,7 +1848,6 @@
             arrayScore.push(score);
         }
 
-        // addData('奇瑞捷途X70', );
         addData('大众帕萨特2019', 24);
         addData('大众途观L', 14);
         addData('东风AX7', 7);
@@ -2227,8 +2269,8 @@
                 barWidth: 10, type: 'bar',
                 itemStyle: {
                     normal: {
-                        show: true,//鼠标悬停时显示label数据
-                        barBorderRadius: [10, 10, 10, 10],//柱形图圆角，初始化效果
+                        show: true,
+                        barBorderRadius: [10, 10, 10, 10],
                         color: function (params) {
                             if (params.value >= 60000) return "#4CAF50";
                             else if (params.value >= 50000) return "#FFEB3B";
@@ -2257,17 +2299,17 @@
                 show: true, feature: {saveAsImage: {show: true},},
                 iconStyle: {normal: {borderWidth: 1, borderColor: '#ccc'}}
             },
-            legend: {show: true, x: 'left', y: 'top', padding: [15, 0, 0, 10]},//图例说明文字设置
+            legend: {show: true, x: 'left', y: 'top', padding: [15, 0, 0, 10]},
             grid: {left: '3%', right: '4%', bottom: '5%', top: '6%', containLabel: true},
             yAxis: [{
-                min: 0, type: 'category', data: arrayCar, axisLabel: {color: '#DDDDDD'},// 刻度线标签
-                axisLine: {lineStyle: {color: '#DDDDDD'}}// 坐标轴
+                min: 0, type: 'category', data: arrayCar, axisLabel: {color: '#DDDDDD'},
+                axisLine: {lineStyle: {color: '#DDDDDD'}}
             }],
             xAxis: [{
-                min: 0, type: 'value', splitArea: {show: false}, axisLabel: {color: '#DDDDDD'},// 刻度线标签
-                axisLine: {lineStyle: {color: '#DDDDDD'}}// 坐标轴
+                min: 0, type: 'value', splitArea: {show: false}, axisLabel: {color: '#DDDDDD'},
+                axisLine: {lineStyle: {color: '#DDDDDD'}}
             }],
-            label: {normal: {show: true, position: 'top'}},//显示bar数据
+            label: {normal: {show: true, position: 'top'}},
             series: seriesValue, backgroundColor: '#2b3942',
             //graphic: [
             //    {

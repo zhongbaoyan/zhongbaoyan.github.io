@@ -74,7 +74,7 @@
                   
                     <div><span class="support">李澄清</span></div>
           
-                    <div><span class="support">哔哔哔哔哔哔</span></div>
+                    <div><span class="support">昊</span></div><!-- 哔哔哔哔哔哔:昊 -->
                     <div><span class="support">骁</span></div>
                     <div><span class="support">懿</span></div>
                     <div><span class="support">继新</span></div>
@@ -85,15 +85,15 @@
                     <div><span class="support">王博文</span></div>
                     <div><span class="support">博强</span></div>
      
-                    <div><span class="support">小任</span></div>
+                    <div><span class="support">小任</span></div><!-- 翔 -->
                     <div><span class="support">昭</span></div>
                     <div><span class="support">旭林</span></div>
                     <div><span class="support">科峰</span></div>
   
-                    <div><span class="support">zhlive</span></div>
+                    <div><span class="support">鲁</span></div><!-- zhlive:鲁 -->
                     <div><span class="support">志杰</span></div>
  
-                    <div><span class="support">小興興</span></div>
+                    <div><span class="support">小興興</span></div><!-- 国 -->
                     <div><span class="support">思成</span></div>
                     <div><span class="support">思明</span></div>
                     <div><span class="support">杭锦峰</span></div>
@@ -109,8 +109,7 @@
 
                     <div><span class="support">忠阳</span></div>
 
-                    <div><span class="support">YIFang0926</span></div>
-                    <div><span class="support">方益民</span></div>
+                    <div><span class="support">方益民</span></div><!-- YIFang0926 -->
                 </div>
                 <img class="img-alipay" src="../resource/img/pay/Alipay.png">
             </div>
@@ -159,9 +158,9 @@
                 var item = $(this.settings.wrap).find("div");
                 for (var i = 0; i < item.length; i++) {
                     item.eq(i).css({
-                        top: this.getRandomTop() + "px",
-                        color: this.getRandomColor(),
-                        fontSize: this.getRandomSize() + "px"
+                        top: this.getRandomTop(i) + "px",
+                        color: this.getRandomColor(i),
+                        fontSize: this.getRandomSize(i) + "px"
                     });
                     item.eq(i).css({
                         right: -item.eq(i).width()
@@ -171,26 +170,21 @@
             },
             bindEven: function () {
                 var _this = this;
-                $(".addbarrage .submit").on('click', function () {
-                    _this._click(_this);
-                });
+                $(".addbarrage .submit").on('click', function () { _this._click(_this); });
             },
-            getRandomColor: function () {
+            getRandomColor: function (index) {
                 var max = this.settings.color.length;
-                var randomNum = Math.floor(Math.random() * max);
-                return this.settings.color[randomNum];
+                //var randomNum = Math.floor(Math.random() * max);
+                return this.settings.color[index % max];
             },
-            getRandomTop: function () {
-                var top = (Math.random() * 350).toFixed(1);
-                return top;
-            },
-            getRandomSize: function () {
-                var size = (15 + Math.random() * 10); // (12 + Math.random() * 28);
-                return size;
+            getRandomTop: function (index) { 
+                return (index % 11) * 35; //(Math.random() * 350).toFixed(1);
+            },  
+            getRandomSize: function (index) {
+                return 25 - index * 0.2; // 15 + Math.random() * 10);
             },
             getRandomTime: function () {
-                var time = Math.floor((8 + Math.random() * 10));
-                return time * 1000;
+                return Math.floor((10 + Math.random() * 10)) * 1000;
             },
             randomTime: function (n) {
                 var obj = $(this.settings.wrap).find("div");

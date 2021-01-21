@@ -185,6 +185,9 @@ function getLogoByMake(m, depth, size) {
     else if (m.indexOf("小鹏") != -1) n = "XiaoPeng";
     else if (m.indexOf("海马") != -1) n = "HaiMa";
     else if (m.indexOf("荣威") != -1) n = "Roewe";
-    else n = "Default";
+    else {
+        //n = "Default";
+        return "<i class='btn-detail-link zmdi zmdi-car car-logo' align='center'></i>";
+    }
     return "<img class='car-logo' src='" + imgPath + n + ".png'>";
 }
